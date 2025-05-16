@@ -1,0 +1,51 @@
+dependencies: []
+func_name: psi
+param:
+  sf_cluster_desc:
+    devices:
+      spu_config:
+        cluster_def:
+          nodes:
+          - address: 172.26.1.58:9100
+            listen_address: 0.0.0.0:9100
+            party: alice
+          - address: 172.26.1.56:9200
+            listen_address: 0.0.0.0:9200
+            party: bob
+          runtime_config:
+            field: 3
+            protocol: 2
+        link_desc:
+          brpc_channel_connection_type: pooled
+          brpc_channel_protocol: http
+          connect_retry_interval_ms: 1000
+          connect_retry_times: 60
+          http_timeout_ms: 1200000
+          recv_timeout_ms: 1200000
+    sf_init:
+      address: 172.26.1.58:6379
+      parties:
+      - alice
+      - bob
+  sf_node_eval_param:
+    input_path:
+      alice: /mnt/disc1/beng003/platform_manage/local_data/alice/alice.csv
+      bob: /mnt/disc1/beng003/work/bob/bob.csv
+    key:
+      alice:
+      - id1
+      bob:
+      - id2
+    output_path:
+      alice: /mnt/disc1/beng003/platform_manage/local_data/alice/psi-output.csv
+      bob: /mnt/disc1/beng003/work/bob/psi-output.csv
+    receiver: alice
+sf_output_information:
+- ids: psi-output
+  is_in_database:
+    alice: false
+    bob: false
+  output_path:
+    alice: /mnt/disc1/beng003/platform_manage/local_data/alice/psi-output.csv
+    bob: /mnt/disc1/beng003/work/bob/psi-output.csv
+task_uid: '1001'

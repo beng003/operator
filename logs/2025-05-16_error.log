@@ -1,0 +1,45 @@
+2025-05-16 17:40:47.368 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-05-16 17:40:47.369 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-05-16 17:40:47.370 |  | INFO     | module_admin.service.task_service:_start_monitor:47 - 进程监控线程已启动
+2025-05-16 18:04:04.288 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-05-16 18:04:04.289 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-05-16 18:04:04.291 |  | INFO     | module_admin.service.task_service:_start_monitor:47 - 进程监控线程已启动
+2025-05-16 18:09:08.409 | 21a14e20ddc544f4bcb7d62585f03c01 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [{"job_uid": "psi3", "job_executor": "default", "invoke_target": "module_task.scheduler_test.job", "job_args": "", "job_kwargs": ""}]
+2025-05-16 18:09:08.410 | 21a14e20ddc544f4bcb7d62585f03c01 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-05-16 18:09:08.411 | 21a14e20ddc544f4bcb7d62585f03c01 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-16 18:09:08.416 | 21a14e20ddc544f4bcb7d62585f03c01 | INFO     | module_admin.service.task_service:start_process:126 - 已在进程 309390 中启动任务 psi3
+2025-05-16 18:09:14.597 |  | INFO     | module_admin.service.task_service:_send_callback_notification:252 - 回调通知已发送: 200
+2025-05-16 18:09:14.599 |  | INFO     | module_admin.service.task_service:_monitor_processes:78 - 任务 psi3 已结束，已从进程列表中移除
+2025-05-16 18:09:14.664 | 83553d312d7f4568be7400c9ff382144 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [{"job_uid": "psi4", "job_executor": "default", "invoke_target": "module_task.scheduler_test.job", "job_args": "", "job_kwargs": ""}]
+2025-05-16 18:09:14.666 | 83553d312d7f4568be7400c9ff382144 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-05-16 18:09:14.666 | 83553d312d7f4568be7400c9ff382144 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-16 18:09:14.671 | 83553d312d7f4568be7400c9ff382144 | INFO     | module_admin.service.task_service:start_process:126 - 已在进程 310001 中启动任务 psi4
+2025-05-16 18:09:19.618 |  | INFO     | module_admin.service.task_service:_send_callback_notification:252 - 回调通知已发送: 200
+2025-05-16 18:09:19.619 |  | INFO     | module_admin.service.task_service:_monitor_processes:78 - 任务 psi4 已结束，已从进程列表中移除
+2025-05-16 18:26:43.449 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-05-16 18:26:43.449 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-05-16 18:26:43.452 |  | INFO     | module_admin.service.task_service:_start_monitor:50 - 进程监控线程已启动
+2025-05-16 18:26:59.442 | 8c9891ce56ca4305a7d7b46bdfa82c2d | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [{"job_uid": "psi3", "job_executor": "default", "invoke_target": "module_task.scheduler_test.job", "job_args": "", "job_kwargs": ""}]
+2025-05-16 18:26:59.444 | 8c9891ce56ca4305a7d7b46bdfa82c2d | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-05-16 18:26:59.445 | 8c9891ce56ca4305a7d7b46bdfa82c2d | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-16 18:26:59.450 | 8c9891ce56ca4305a7d7b46bdfa82c2d | INFO     | module_admin.service.task_service:start_process:129 - 已在进程 346115 中启动任务 psi3
+2025-05-16 18:27:03.486 |  | INFO     | module_admin.service.task_service:_send_callback_notification:255 - 回调通知已发送: 200
+2025-05-16 18:27:03.487 |  | INFO     | module_admin.service.task_service:_monitor_processes:81 - 任务 psi3 已结束，已从进程列表中移除
+2025-05-16 18:27:03.546 | beb2f14ef10f454b8a3c477eb10ef47e | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [{"job_uid": "psi4", "job_executor": "default", "invoke_target": "module_task.scheduler_test.job", "job_args": "", "job_kwargs": ""}]
+2025-05-16 18:27:03.547 | beb2f14ef10f454b8a3c477eb10ef47e | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-05-16 18:27:03.548 | beb2f14ef10f454b8a3c477eb10ef47e | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-16 18:27:03.553 | beb2f14ef10f454b8a3c477eb10ef47e | INFO     | module_admin.service.task_service:start_process:129 - 已在进程 346637 中启动任务 psi4
+2025-05-16 18:27:08.505 |  | INFO     | module_admin.service.task_service:_send_callback_notification:255 - 回调通知已发送: 200
+2025-05-16 18:27:08.507 |  | INFO     | module_admin.service.task_service:_monitor_processes:81 - 任务 psi4 已结束，已从进程列表中移除
+2025-05-16 18:31:30.182 | 7488863a37cb4d4b82d7fcb20ed39e07 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [{"job_uid": "psi3", "job_executor": "default", "invoke_target": "module_task.scheduler_test.job", "job_args": "", "job_kwargs": ""}]
+2025-05-16 18:31:30.184 | 7488863a37cb4d4b82d7fcb20ed39e07 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-05-16 18:31:30.184 | 7488863a37cb4d4b82d7fcb20ed39e07 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-16 18:31:30.189 | 7488863a37cb4d4b82d7fcb20ed39e07 | INFO     | module_admin.service.task_service:start_process:129 - 已在进程 357349 中启动任务 psi3
+2025-05-16 18:31:38.774 |  | INFO     | module_admin.service.task_service:_send_callback_notification:255 - 回调通知已发送: 200
+2025-05-16 18:31:38.776 |  | INFO     | module_admin.service.task_service:_monitor_processes:81 - 任务 psi3 已结束，已从进程列表中移除
+2025-05-16 18:31:38.823 | 7a3880d1dbd24fd689bc44daf8015802 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [{"job_uid": "psi4", "job_executor": "default", "invoke_target": "module_task.scheduler_test.job", "job_args": "", "job_kwargs": ""}]
+2025-05-16 18:31:38.824 | 7a3880d1dbd24fd689bc44daf8015802 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-05-16 18:31:38.825 | 7a3880d1dbd24fd689bc44daf8015802 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-16 18:31:38.828 | 7a3880d1dbd24fd689bc44daf8015802 | INFO     | module_admin.service.task_service:start_process:129 - 已在进程 358094 中启动任务 psi4
+2025-05-16 18:31:43.795 |  | INFO     | module_admin.service.task_service:_send_callback_notification:255 - 回调通知已发送: 200
+2025-05-16 18:31:43.797 |  | INFO     | module_admin.service.task_service:_monitor_processes:81 - 任务 psi4 已结束，已从进程列表中移除

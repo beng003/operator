@@ -1,0 +1,48 @@
+initiator: alice
+job_id: job-alice-bob-001
+max_parallelism: 2
+status:
+  create_time: "2024-01-17T07:13:39Z"
+  end_time: "2024-01-17T07:13:39Z"
+  err_msg: ""
+  start_time: "2024-01-17T07:13:39Z"
+  state: Failed
+  tasks:
+    - create_time: ""
+      end_time: ""
+      err_msg: ""
+      parties: []
+      start_time: ""
+      state: ""
+      task_id: job-psi
+    - create_time: ""
+      end_time: ""
+      err_msg: ""
+      parties: []
+      start_time: ""
+      state: ""
+      task_id: job-split
+tasks:
+  - alias: job-psi
+    name: psi
+    app_image: secretflow-image
+    dependencies:
+      - ""
+    parties:
+      - domain_id: alice
+      - domain_id: bob
+    priority: 100
+    task_id: job-psi
+    task_input_config: "output_psi_input_data.yaml"
+  - alias: job-split
+    name: split
+    app_image: secretflow-image
+    dependencies:
+      - job-psi
+      # - ""
+    parties:
+      - domain_id: alice
+      - domain_id: bob
+    priority: 100
+    task_id: job-split
+    task_input_config: "output_split_input_data.yaml"

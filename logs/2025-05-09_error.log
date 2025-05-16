@@ -1,0 +1,178 @@
+2025-05-09 16:34:57.586 |  | INFO     | module_admin.service.task_service:_start_monitor:44 - 进程监控线程已启动
+2025-05-09 16:35:00.531 |  | INFO     | module_admin.service.task_service:_start_monitor:44 - 进程监控线程已启动
+2025-05-09 16:35:00.612 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-09 16:35:00.613 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-09 16:35:00.639 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-09 16:35:00.640 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-09 16:35:00.644 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-09 16:35:00.645 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-09 16:35:37.325 |  | INFO     | module_admin.service.task_service:_start_monitor:44 - 进程监控线程已启动
+2025-05-09 16:35:40.182 |  | INFO     | module_admin.service.task_service:_start_monitor:44 - 进程监控线程已启动
+2025-05-09 16:35:40.401 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-09 16:35:40.401 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-09 17:50:24.334 |  | INFO     | module_admin.service.task_service:_start_monitor:44 - 进程监控线程已启动
+2025-05-09 17:50:27.127 |  | INFO     | module_admin.service.task_service:_start_monitor:44 - 进程监控线程已启动
+2025-05-09 17:50:27.243 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-09 17:50:27.244 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-09 17:56:15.447 |  | INFO     | module_admin.service.task_service:_start_monitor:45 - 进程监控线程已启动
+2025-05-09 17:56:15.525 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-09 17:56:15.526 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-09 17:56:29.789 |  | INFO     | module_admin.service.task_service:_start_monitor:45 - 进程监控线程已启动
+2025-05-09 17:56:32.206 |  | INFO     | module_admin.service.task_service:_start_monitor:45 - 进程监控线程已启动
+2025-05-09 17:56:32.282 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-09 17:56:32.282 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-09 17:57:54.893 |  | INFO     | module_admin.service.task_service:_start_monitor:45 - 进程监控线程已启动
+2025-05-09 17:57:56.697 |  | INFO     | module_admin.service.task_service:_start_monitor:45 - 进程监控线程已启动
+2025-05-09 17:57:56.769 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-09 17:57:56.769 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-09 18:00:25.793 |  | INFO     | module_admin.service.task_service:_start_monitor:45 - 进程监控线程已启动
+2025-05-09 18:00:28.179 |  | INFO     | module_admin.service.task_service:_start_monitor:45 - 进程监控线程已启动
+2025-05-09 18:00:28.251 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-09 18:00:28.252 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-09 18:03:08.420 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-09 18:03:08.421 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-09 18:04:05.250 | a7399607ef6444d1920b24287165b003 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-05-09 18:04:05.252 | a7399607ef6444d1920b24287165b003 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {'sf_cluster_desc': {'devices': {'spu_config': {'cluster_def': {'nodes': [{'address': '127.0.0.1:11666', 'listen_address': '0.0.0.0:11666', 'party': 'alice'}, {'address': '127.0.0.1:11667', 'listen_address': '0.0.0.0:11667', 'party': 'bob'}], 'runtime_config': {'field': 3, 'protocol': 2}}, 'link_desc': {'brpc_channel_connection_type': 'pooled', 'brpc_channel_protocol': 'http', 'connect_retry_interval_ms': 1000, 'connect_retry_times': 60, 'http_timeout_ms': 1200000, 'recv_timeout_ms': 1200000}}}, 'sf_init': {'address': 'local', 'parties': ['alice', 'bob']}}, 'sf_node_eval_param': {'input_path': {'alice': '/disc/home/listen/operator/local_data/alice/alice.csv', 'bob': '/disc/home/listen/operator/local_data/bob/bob.csv'}, 'key': {'alice': ['id1'], 'bob': ['id2']}, 'output_path': {'alice': '/disc/home/listen/operator/local_data/alice/psi-output.csv', 'bob': '/disc/home/listen/operator/local_data/bob/psi-output.csv'}, 'receiver': 'alice'}}
+2025-05-09 18:04:05.256 | a7399607ef6444d1920b24287165b003 | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 1606425 中启动任务 psi3
+2025-05-09 18:04:05.257 | a7399607ef6444d1920b24287165b003 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-09 18:04:05.260 | a7399607ef6444d1920b24287165b003 | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 1606426 中启动任务 psi4
+2025-05-09 18:05:37.619 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-09 18:05:37.620 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-09 19:06:21.447 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-09 19:06:21.448 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-09 19:08:13.094 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-09 19:08:13.095 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-09 19:09:09.669 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-09 19:09:09.669 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-09 19:11:58.593 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-09 19:11:58.593 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-09 19:13:51.330 |  | INFO     | server:lifespan:18 - RuoYi-FastAPI开始启动
+2025-05-09 19:13:51.331 |  | INFO     | server:lifespan:22 - RuoYi-FastAPI启动成功
+2025-05-09 19:13:51.332 |  | INFO     | module_admin.service.task_service:_start_monitor:47 - 进程监控线程已启动
+2025-05-09 19:49:36.828 |  | INFO     | server:lifespan:18 - RuoYi-FastAPI开始启动
+2025-05-09 19:49:36.828 |  | INFO     | server:lifespan:22 - RuoYi-FastAPI启动成功
+2025-05-09 19:49:36.831 |  | INFO     | module_admin.service.task_service:_start_monitor:47 - 进程监控线程已启动
+2025-05-09 19:49:45.773 | ea1f1c7be7e44640aa1455cafc28520d | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-05-09 19:49:45.774 | ea1f1c7be7e44640aa1455cafc28520d | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {'sf_cluster_desc': {'devices': {'spu_config': {'cluster_def': {'nodes': [{'address': '127.0.0.1:11666', 'listen_address': '0.0.0.0:11666', 'party': 'alice'}, {'address': '127.0.0.1:11667', 'listen_address': '0.0.0.0:11667', 'party': 'bob'}], 'runtime_config': {'field': 3, 'protocol': 2}}, 'link_desc': {'brpc_channel_connection_type': 'pooled', 'brpc_channel_protocol': 'http', 'connect_retry_interval_ms': 1000, 'connect_retry_times': 60, 'http_timeout_ms': 1200000, 'recv_timeout_ms': 1200000}}}, 'sf_init': {'address': 'local', 'parties': ['alice', 'bob']}}, 'sf_node_eval_param': {'input_path': {'alice': 'alice.csv', 'bob': 'bob.csv'}, 'key': {'alice': ['id1'], 'bob': ['id2']}, 'output_path': {'alice': 'psi-output.csv', 'bob': 'psi-output.csv'}, 'receiver': 'alice'}}
+2025-05-09 19:49:45.777 | ea1f1c7be7e44640aa1455cafc28520d | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 1730889 中启动任务 psi3
+2025-05-09 19:49:45.778 | ea1f1c7be7e44640aa1455cafc28520d | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-09 19:49:45.781 | ea1f1c7be7e44640aa1455cafc28520d | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 1730890 中启动任务 psi4
+2025-05-09 19:49:51.847 |  | INFO     | module_admin.service.task_service:_send_callback_notification:247 - 回调通知已发送: 404
+2025-05-09 19:49:51.848 |  | INFO     | module_admin.service.task_service:_monitor_processes:77 - 任务 psi4 已结束，已从进程列表中移除
+2025-05-09 19:50:01.866 |  | INFO     | module_admin.service.task_service:_send_callback_notification:247 - 回调通知已发送: 404
+2025-05-09 19:50:01.868 |  | INFO     | module_admin.service.task_service:_monitor_processes:77 - 任务 psi3 已结束，已从进程列表中移除
+2025-05-09 19:52:45.556 |  | INFO     | server:lifespan:18 - RuoYi-FastAPI开始启动
+2025-05-09 19:52:45.557 |  | INFO     | server:lifespan:22 - RuoYi-FastAPI启动成功
+2025-05-09 19:52:45.559 |  | INFO     | module_admin.service.task_service:_start_monitor:47 - 进程监控线程已启动
+2025-05-09 19:52:56.805 | ead4f97444354e62a1c6d959b9c8998e | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-05-09 19:52:56.806 | ead4f97444354e62a1c6d959b9c8998e | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {'sf_cluster_desc': {'devices': {'spu_config': {'cluster_def': {'nodes': [{'address': '127.0.0.1:11666', 'listen_address': '0.0.0.0:11666', 'party': 'alice'}, {'address': '127.0.0.1:11667', 'listen_address': '0.0.0.0:11667', 'party': 'bob'}], 'runtime_config': {'field': 3, 'protocol': 2}}, 'link_desc': {'brpc_channel_connection_type': 'pooled', 'brpc_channel_protocol': 'http', 'connect_retry_interval_ms': 1000, 'connect_retry_times': 60, 'http_timeout_ms': 1200000, 'recv_timeout_ms': 1200000}}}, 'sf_init': {'address': 'local', 'parties': ['alice', 'bob']}}, 'sf_node_eval_param': {'input_path': {'alice': 'alice.csv', 'bob': 'bob.csv'}, 'key': {'alice': ['id1'], 'bob': ['id2']}, 'output_path': {'alice': 'psi-output.csv', 'bob': 'psi-output.csv'}, 'receiver': 'alice'}}
+2025-05-09 19:52:56.809 | ead4f97444354e62a1c6d959b9c8998e | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 1750041 中启动任务 psi3
+2025-05-09 19:52:56.810 | ead4f97444354e62a1c6d959b9c8998e | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-09 19:52:56.813 | ead4f97444354e62a1c6d959b9c8998e | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 1750042 中启动任务 psi4
+2025-05-09 19:53:00.583 |  | INFO     | module_admin.service.task_service:_send_callback_notification:247 - 回调通知已发送: 404
+2025-05-09 19:53:00.584 |  | INFO     | module_admin.service.task_service:_monitor_processes:77 - 任务 psi4 已结束，已从进程列表中移除
+2025-05-09 19:53:10.604 |  | INFO     | module_admin.service.task_service:_send_callback_notification:247 - 回调通知已发送: 404
+2025-05-09 19:53:10.605 |  | INFO     | module_admin.service.task_service:_monitor_processes:77 - 任务 psi3 已结束，已从进程列表中移除
+2025-05-09 19:54:12.216 |  | INFO     | server:lifespan:18 - RuoYi-FastAPI开始启动
+2025-05-09 19:54:12.217 |  | INFO     | server:lifespan:22 - RuoYi-FastAPI启动成功
+2025-05-09 19:54:12.219 |  | INFO     | module_admin.service.task_service:_start_monitor:47 - 进程监控线程已启动
+2025-05-09 19:54:26.025 | 15ed789b927543c2aabec57445e5a85b | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-05-09 19:54:26.027 | 15ed789b927543c2aabec57445e5a85b | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {'sf_cluster_desc': {'devices': {'spu_config': {'cluster_def': {'nodes': [{'address': '127.0.0.1:11666', 'listen_address': '0.0.0.0:11666', 'party': 'alice'}, {'address': '127.0.0.1:11667', 'listen_address': '0.0.0.0:11667', 'party': 'bob'}], 'runtime_config': {'field': 3, 'protocol': 2}}, 'link_desc': {'brpc_channel_connection_type': 'pooled', 'brpc_channel_protocol': 'http', 'connect_retry_interval_ms': 1000, 'connect_retry_times': 60, 'http_timeout_ms': 1200000, 'recv_timeout_ms': 1200000}}}, 'sf_init': {'address': 'local', 'parties': ['alice', 'bob']}}, 'sf_node_eval_param': {'input_path': {'alice': 'alice.csv', 'bob': 'bob.csv'}, 'key': {'alice': ['id1'], 'bob': ['id2']}, 'output_path': {'alice': 'psi-output.csv', 'bob': 'psi-output.csv'}, 'receiver': 'alice'}}
+2025-05-09 19:54:26.038 | 15ed789b927543c2aabec57445e5a85b | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 1767346 中启动任务 psi3
+2025-05-09 19:54:26.039 | 15ed789b927543c2aabec57445e5a85b | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-09 19:54:26.042 | 15ed789b927543c2aabec57445e5a85b | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 1767347 中启动任务 psi4
+2025-05-09 19:54:37.272 |  | INFO     | module_admin.service.task_service:_send_callback_notification:247 - 回调通知已发送: 404
+2025-05-09 19:54:37.275 |  | INFO     | module_admin.service.task_service:_monitor_processes:77 - 任务 psi4 已结束，已从进程列表中移除
+2025-05-09 19:56:13.533 |  | INFO     | server:lifespan:18 - RuoYi-FastAPI开始启动
+2025-05-09 19:56:13.534 |  | INFO     | server:lifespan:22 - RuoYi-FastAPI启动成功
+2025-05-09 19:56:13.536 |  | INFO     | module_admin.service.task_service:_start_monitor:47 - 进程监控线程已启动
+2025-05-09 19:57:33.191 | f47f9aa4f1054080b541562575a1b9cb | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-05-09 19:57:33.193 | f47f9aa4f1054080b541562575a1b9cb | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {'sf_cluster_desc': {'devices': {'spu_config': {'cluster_def': {'nodes': [{'address': '127.0.0.1:11666', 'listen_address': '0.0.0.0:11666', 'party': 'alice'}, {'address': '127.0.0.1:11667', 'listen_address': '0.0.0.0:11667', 'party': 'bob'}], 'runtime_config': {'field': 3, 'protocol': 2}}, 'link_desc': {'brpc_channel_connection_type': 'pooled', 'brpc_channel_protocol': 'http', 'connect_retry_interval_ms': 1000, 'connect_retry_times': 60, 'http_timeout_ms': 1200000, 'recv_timeout_ms': 1200000}}}, 'sf_init': {'address': 'local', 'parties': ['alice', 'bob']}}, 'sf_node_eval_param': {'input_path': {'alice': 'alice.csv', 'bob': 'bob.csv'}, 'key': {'alice': ['id1'], 'bob': ['id2']}, 'output_path': {'alice': 'psi-output.csv', 'bob': 'psi-output.csv'}, 'receiver': 'alice'}}
+2025-05-09 19:57:33.197 | f47f9aa4f1054080b541562575a1b9cb | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 1792696 中启动任务 psi3
+2025-05-09 19:57:33.198 | f47f9aa4f1054080b541562575a1b9cb | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-09 19:57:33.201 | f47f9aa4f1054080b541562575a1b9cb | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 1792697 中启动任务 psi4
+2025-05-09 19:57:38.621 |  | INFO     | module_admin.service.task_service:_send_callback_notification:247 - 回调通知已发送: 404
+2025-05-09 19:57:38.622 |  | INFO     | module_admin.service.task_service:_monitor_processes:77 - 任务 psi4 已结束，已从进程列表中移除
+2025-05-09 19:57:53.648 |  | INFO     | module_admin.service.task_service:_send_callback_notification:247 - 回调通知已发送: 404
+2025-05-09 19:57:53.651 |  | INFO     | module_admin.service.task_service:_monitor_processes:77 - 任务 psi3 已结束，已从进程列表中移除
+2025-05-09 20:02:54.476 |  | INFO     | server:lifespan:18 - RuoYi-FastAPI开始启动
+2025-05-09 20:02:54.477 |  | INFO     | server:lifespan:22 - RuoYi-FastAPI启动成功
+2025-05-09 20:02:54.478 |  | INFO     | module_admin.service.task_service:_start_monitor:47 - 进程监控线程已启动
+2025-05-09 20:03:11.855 | 99c89576c0924a66b10de4926e7fb33f | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-05-09 20:03:11.857 | 99c89576c0924a66b10de4926e7fb33f | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {'sf_cluster_desc': {'devices': {'spu_config': {'cluster_def': {'nodes': [{'address': '127.0.0.1:11666', 'listen_address': '0.0.0.0:11666', 'party': 'alice'}, {'address': '127.0.0.1:11667', 'listen_address': '0.0.0.0:11667', 'party': 'bob'}], 'runtime_config': {'field': 3, 'protocol': 2}}, 'link_desc': {'brpc_channel_connection_type': 'pooled', 'brpc_channel_protocol': 'http', 'connect_retry_interval_ms': 1000, 'connect_retry_times': 60, 'http_timeout_ms': 1200000, 'recv_timeout_ms': 1200000}}}, 'sf_init': {'address': 'local', 'parties': ['alice', 'bob']}}, 'sf_node_eval_param': {'input_path': {'alice': 'alice.csv', 'bob': 'bob.csv'}, 'key': {'alice': ['id1'], 'bob': ['id2']}, 'output_path': {'alice': 'psi-output.csv', 'bob': 'psi-output.csv'}, 'receiver': 'alice'}}
+2025-05-09 20:03:11.861 | 99c89576c0924a66b10de4926e7fb33f | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 1817954 中启动任务 psi3
+2025-05-09 20:03:11.862 | 99c89576c0924a66b10de4926e7fb33f | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-09 20:03:11.865 | 99c89576c0924a66b10de4926e7fb33f | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 1817955 中启动任务 psi4
+2025-05-09 20:10:34.489 |  | INFO     | server:lifespan:18 - RuoYi-FastAPI开始启动
+2025-05-09 20:10:34.491 |  | INFO     | server:lifespan:22 - RuoYi-FastAPI启动成功
+2025-05-09 20:10:34.496 |  | INFO     | module_admin.service.task_service:_start_monitor:47 - 进程监控线程已启动
+2025-05-09 20:12:40.836 |  | INFO     | server:lifespan:18 - RuoYi-FastAPI开始启动
+2025-05-09 20:12:40.838 |  | INFO     | server:lifespan:22 - RuoYi-FastAPI启动成功
+2025-05-09 20:12:40.840 |  | INFO     | module_admin.service.task_service:_start_monitor:47 - 进程监控线程已启动
+2025-05-09 20:17:48.062 |  | INFO     | server:lifespan:18 - RuoYi-FastAPI开始启动
+2025-05-09 20:17:48.063 |  | INFO     | server:lifespan:22 - RuoYi-FastAPI启动成功
+2025-05-09 20:17:48.069 |  | INFO     | module_admin.service.task_service:_start_monitor:47 - 进程监控线程已启动
+2025-05-09 20:17:58.207 | 1d82f8f20bb74473806cf36986835a95 | INFO     | module_admin.controller.task_controller:stop_job:76 - 停止任务: ['psi3', 'psi4']
+2025-05-09 20:18:21.511 | 1d82f8f20bb74473806cf36986835a95 | WARNING  | module_admin.service.task_service:stop_process:137 - 任务 psi3 不在运行中
+2025-05-09 20:18:21.512 | 1d82f8f20bb74473806cf36986835a95 | WARNING  | module_admin.service.task_service:stop_process:137 - 任务 psi4 不在运行中
+2025-05-09 20:19:47.568 | d4cf3d521b624c688bb6239607a4afbc | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-05-09 20:19:47.569 | d4cf3d521b624c688bb6239607a4afbc | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-09 20:19:47.578 | d4cf3d521b624c688bb6239607a4afbc | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 1864546 中启动任务 psi3
+2025-05-09 20:19:47.579 | d4cf3d521b624c688bb6239607a4afbc | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-09 20:19:47.584 | d4cf3d521b624c688bb6239607a4afbc | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 1864547 中启动任务 psi4
+2025-05-09 20:19:55.017 | e062edb817df4e1e82717d913d8736ad | INFO     | module_admin.controller.task_controller:stop_job:76 - 停止任务: ['psi3', 'psi4']
+2025-05-09 20:19:55.020 | e062edb817df4e1e82717d913d8736ad | INFO     | module_admin.service.task_service:stop_process:161 - 任务 psi3 已停止
+2025-05-09 20:19:55.063 | e062edb817df4e1e82717d913d8736ad | INFO     | module_admin.service.task_service:stop_process:161 - 任务 psi4 已停止
+2025-05-09 20:21:05.856 | 79aab93f56f34ccfa2edc72bf7801d17 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-05-09 20:21:05.857 | 79aab93f56f34ccfa2edc72bf7801d17 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-09 20:21:05.865 | 79aab93f56f34ccfa2edc72bf7801d17 | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 1867799 中启动任务 psi3
+2025-05-09 20:21:05.866 | 79aab93f56f34ccfa2edc72bf7801d17 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-09 20:21:05.870 | 79aab93f56f34ccfa2edc72bf7801d17 | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 1867800 中启动任务 psi4
+2025-05-09 20:21:31.006 | 56bcbf86098c45cda4cdfb43ed537468 | INFO     | module_admin.controller.task_controller:stop_job:76 - 停止任务: ['psi3', 'psi4']
+2025-05-09 20:21:31.047 | 56bcbf86098c45cda4cdfb43ed537468 | INFO     | module_admin.service.task_service:stop_process:161 - 任务 psi3 已停止
+2025-05-09 20:21:31.085 | 56bcbf86098c45cda4cdfb43ed537468 | INFO     | module_admin.service.task_service:stop_process:161 - 任务 psi4 已停止
+2025-05-09 20:27:11.293 |  | INFO     | server:lifespan:18 - RuoYi-FastAPI开始启动
+2025-05-09 20:27:11.294 |  | INFO     | server:lifespan:22 - RuoYi-FastAPI启动成功
+2025-05-09 20:27:11.296 |  | INFO     | module_admin.service.task_service:_start_monitor:47 - 进程监控线程已启动
+2025-05-09 21:16:16.385 |  | INFO     | server:lifespan:18 - RuoYi-FastAPI开始启动
+2025-05-09 21:16:16.386 |  | INFO     | server:lifespan:22 - RuoYi-FastAPI启动成功
+2025-05-09 21:16:16.388 |  | INFO     | module_admin.service.task_service:_start_monitor:47 - 进程监控线程已启动
+2025-05-09 21:16:40.067 | 7206ceb2f6fb438db951d2dea44af76d | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-05-09 21:16:40.068 | 7206ceb2f6fb438db951d2dea44af76d | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-09 21:16:40.071 | 7206ceb2f6fb438db951d2dea44af76d | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 2007317 中启动任务 psi3
+2025-05-09 21:16:40.072 | 7206ceb2f6fb438db951d2dea44af76d | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-09 21:16:40.075 | 7206ceb2f6fb438db951d2dea44af76d | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 2007318 中启动任务 psi4
+2025-05-09 21:16:46.424 |  | INFO     | module_admin.service.task_service:_send_callback_notification:247 - 回调通知已发送: 404
+2025-05-09 21:16:46.426 |  | INFO     | module_admin.service.task_service:_monitor_processes:77 - 任务 psi3 已结束，已从进程列表中移除
+2025-05-09 21:16:46.434 |  | INFO     | module_admin.service.task_service:_send_callback_notification:247 - 回调通知已发送: 404
+2025-05-09 21:16:46.435 |  | INFO     | module_admin.service.task_service:_monitor_processes:77 - 任务 psi4 已结束，已从进程列表中移除
+2025-05-09 21:17:33.955 | 618f98cb40394318a2707e8a5703778a | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-05-09 21:17:33.957 | 618f98cb40394318a2707e8a5703778a | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-09 21:17:33.961 | 618f98cb40394318a2707e8a5703778a | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 2010925 中启动任务 psi3
+2025-05-09 21:17:33.962 | 618f98cb40394318a2707e8a5703778a | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-09 21:17:33.965 | 618f98cb40394318a2707e8a5703778a | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 2010926 中启动任务 psi4
+2025-05-09 21:17:41.492 |  | INFO     | module_admin.service.task_service:_send_callback_notification:247 - 回调通知已发送: 404
+2025-05-09 21:17:41.494 |  | INFO     | module_admin.service.task_service:_monitor_processes:77 - 任务 psi3 已结束，已从进程列表中移除
+2025-05-09 21:17:41.502 |  | INFO     | module_admin.service.task_service:_send_callback_notification:247 - 回调通知已发送: 404
+2025-05-09 21:17:41.504 |  | INFO     | module_admin.service.task_service:_monitor_processes:77 - 任务 psi4 已结束，已从进程列表中移除
+2025-05-09 21:20:17.753 | 879a771b25c14920bb574afc455d062a | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-05-09 21:20:17.755 | 879a771b25c14920bb574afc455d062a | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-09 21:20:17.759 | 879a771b25c14920bb574afc455d062a | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 2019677 中启动任务 psi3
+2025-05-09 21:20:17.760 | 879a771b25c14920bb574afc455d062a | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-09 21:20:17.763 | 879a771b25c14920bb574afc455d062a | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 2019678 中启动任务 psi4
+2025-05-09 21:20:21.657 |  | INFO     | module_admin.service.task_service:_send_callback_notification:247 - 回调通知已发送: 404
+2025-05-09 21:20:21.658 |  | INFO     | module_admin.service.task_service:_monitor_processes:77 - 任务 psi3 已结束，已从进程列表中移除
+2025-05-09 21:20:21.667 |  | INFO     | module_admin.service.task_service:_send_callback_notification:247 - 回调通知已发送: 404
+2025-05-09 21:20:21.668 |  | INFO     | module_admin.service.task_service:_monitor_processes:77 - 任务 psi4 已结束，已从进程列表中移除
+2025-05-09 21:20:31.317 | 8260cc002fd345a6ba052dc51aceb2b9 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-05-09 21:20:31.318 | 8260cc002fd345a6ba052dc51aceb2b9 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-09 21:20:31.321 | 8260cc002fd345a6ba052dc51aceb2b9 | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 2021117 中启动任务 psi3
+2025-05-09 21:20:31.322 | 8260cc002fd345a6ba052dc51aceb2b9 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-05-09 21:20:31.325 | 8260cc002fd345a6ba052dc51aceb2b9 | INFO     | module_admin.service.task_service:start_process:121 - 已在进程 2021118 中启动任务 psi4
+2025-05-09 21:20:36.685 |  | INFO     | module_admin.service.task_service:_send_callback_notification:247 - 回调通知已发送: 404
+2025-05-09 21:20:36.686 |  | INFO     | module_admin.service.task_service:_monitor_processes:77 - 任务 psi3 已结束，已从进程列表中移除
+2025-05-09 21:20:36.692 |  | INFO     | module_admin.service.task_service:_send_callback_notification:247 - 回调通知已发送: 404
+2025-05-09 21:20:36.693 |  | INFO     | module_admin.service.task_service:_monitor_processes:77 - 任务 psi4 已结束，已从进程列表中移除
+2025-05-09 21:35:13.779 |  | INFO     | server:lifespan:18 - RuoYi-FastAPI开始启动
+2025-05-09 21:35:13.779 |  | INFO     | server:lifespan:22 - RuoYi-FastAPI启动成功
+2025-05-09 21:35:13.780 |  | INFO     | module_admin.service.task_service:_start_monitor:47 - 进程监控线程已启动

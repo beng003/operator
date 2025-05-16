@@ -1,0 +1,166 @@
+2025-05-08 19:39:56.958 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 19:39:56.960 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 19:39:56.973 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 19:39:56.973 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 19:39:56.976 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 19:39:56.976 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 19:40:04.199 | 11acc16cc98a408db48ac73e2cf44b8e | INFO     | module_admin.controller.task_controller:execute_task_list:41 - 获取成功
+2025-05-08 19:40:04.200 | 11acc16cc98a408db48ac73e2cf44b8e | INFO     | module_admin.controller.task_controller:execute_task_list:46 - args: [], kwargs: {}
+2025-05-08 19:40:04.203 | 11acc16cc98a408db48ac73e2cf44b8e | INFO     | module_admin.controller.task_controller:execute_task_list:50 - 已在进程 468957 中启动任务
+2025-05-08 19:40:04.204 | 11acc16cc98a408db48ac73e2cf44b8e | INFO     | module_admin.controller.task_controller:execute_task_list:46 - args: [], kwargs: {}
+2025-05-08 19:40:04.208 | 11acc16cc98a408db48ac73e2cf44b8e | INFO     | module_admin.controller.task_controller:execute_task_list:50 - 已在进程 468958 中启动任务
+2025-05-08 19:41:03.509 | 8797c240c6434ba8b944f239d0cc81be | INFO     | module_admin.controller.task_controller:execute_task_list:41 - 获取成功
+2025-05-08 19:41:03.510 | 8797c240c6434ba8b944f239d0cc81be | INFO     | module_admin.controller.task_controller:execute_task_list:46 - args: [], kwargs: {}
+2025-05-08 19:41:03.514 | 8797c240c6434ba8b944f239d0cc81be | INFO     | module_admin.controller.task_controller:execute_task_list:50 - 已在进程 471127 中启动任务
+2025-05-08 19:41:03.515 | 8797c240c6434ba8b944f239d0cc81be | INFO     | module_admin.controller.task_controller:execute_task_list:46 - args: [], kwargs: {}
+2025-05-08 19:41:03.517 | 8797c240c6434ba8b944f239d0cc81be | INFO     | module_admin.controller.task_controller:execute_task_list:50 - 已在进程 471128 中启动任务
+2025-05-08 19:45:14.315 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 19:45:14.316 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 19:45:14.338 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 19:45:14.339 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 19:45:14.343 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 19:45:14.343 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 19:45:24.696 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 19:45:24.696 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 19:45:24.702 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 19:45:24.703 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 19:45:24.706 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 19:45:24.706 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 19:45:27.426 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 19:45:27.427 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 19:45:27.443 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 19:45:27.443 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 19:45:27.449 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 19:45:27.449 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 19:45:54.977 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 19:45:54.977 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 19:45:55.000 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 19:45:55.001 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 19:45:55.005 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 19:45:55.005 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 19:46:00.858 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 19:46:00.859 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 19:46:00.881 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 19:46:00.882 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 19:46:00.886 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 19:46:00.886 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 19:46:03.967 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 19:46:03.968 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 19:46:03.991 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 19:46:03.992 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 19:46:03.996 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 19:46:03.997 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 19:46:08.861 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 19:46:08.862 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 19:46:08.877 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 19:46:08.878 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 19:46:08.880 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 19:46:08.880 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 19:46:11.693 |  | INFO     | config.get_redis:close_redis_pool:52 - 关闭redis连接成功
+2025-05-08 19:46:12.883 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 19:46:12.884 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 19:46:12.908 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 19:46:12.909 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 19:46:12.914 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 19:46:12.915 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 19:46:18.880 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 19:46:18.881 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 19:46:18.905 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 19:46:18.905 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 19:46:18.909 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 19:46:18.909 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 19:46:22.009 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 19:46:22.009 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 19:46:22.034 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 19:46:22.034 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 19:46:22.039 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 19:46:22.039 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 19:46:30.265 |  | INFO     | config.get_redis:close_redis_pool:52 - 关闭redis连接成功
+2025-05-08 19:46:32.640 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 19:46:32.640 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 19:46:32.655 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 19:46:32.656 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 19:46:32.659 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 19:46:32.659 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 19:46:33.664 |  | INFO     | config.get_redis:close_redis_pool:52 - 关闭redis连接成功
+2025-05-08 19:46:34.898 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 19:46:34.898 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 19:46:34.921 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 19:46:34.921 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 19:46:34.925 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 19:46:34.926 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 19:46:38.359 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 19:46:38.360 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 19:46:38.383 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 19:46:38.384 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 19:46:38.387 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 19:46:38.388 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 19:46:42.274 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 19:46:42.274 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 19:46:42.299 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 19:46:42.300 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 19:46:42.305 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 19:46:42.305 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 19:46:45.149 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 19:46:45.149 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 19:46:45.171 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 19:46:45.172 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 19:46:45.176 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 19:46:45.176 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 19:47:11.002 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 19:47:11.002 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 19:47:11.025 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 19:47:11.025 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 19:47:11.032 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 19:47:11.032 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 20:11:32.682 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 20:11:32.682 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 20:11:32.704 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 20:11:32.705 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 20:11:32.709 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 20:11:32.709 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 20:44:32.648 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 20:44:32.649 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 20:44:32.674 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 20:44:32.675 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 20:44:32.678 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 20:44:32.678 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 20:45:28.039 | 7def5c4b37b645ec94adc11409896ff0 | INFO     | module_admin.controller.task_controller:execute_task_list:40 - 获取成功
+2025-05-08 20:45:28.041 | 7def5c4b37b645ec94adc11409896ff0 | INFO     | module_admin.controller.task_controller:execute_task_list:45 - args: [], kwargs: {}
+2025-05-08 20:45:28.045 | 7def5c4b37b645ec94adc11409896ff0 | INFO     | module_admin.controller.task_controller:execute_task_list:48 - 已在进程 572242 中启动任务
+2025-05-08 20:45:28.046 | 7def5c4b37b645ec94adc11409896ff0 | INFO     | module_admin.controller.task_controller:execute_task_list:45 - args: [], kwargs: {}
+2025-05-08 20:45:28.050 | 7def5c4b37b645ec94adc11409896ff0 | INFO     | module_admin.controller.task_controller:execute_task_list:48 - 已在进程 572243 中启动任务
+2025-05-08 20:51:36.403 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 20:51:36.403 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 20:51:36.408 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 20:51:36.409 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 20:51:36.410 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 20:51:36.410 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 21:08:22.338 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 21:08:22.339 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 21:08:22.351 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 21:08:22.351 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 21:08:22.355 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 21:08:22.355 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 21:08:28.249 | b123fb8e1b674402ad615706dc45b148 | INFO     | module_admin.controller.task_controller:execute_task_list:40 - 获取成功
+2025-05-08 21:08:28.250 | b123fb8e1b674402ad615706dc45b148 | INFO     | module_admin.controller.task_controller:execute_task_list:45 - args: [], kwargs: {'sf_cluster_desc': {'devices': {'spu_config': {'cluster_def': {'nodes': [{'address': '127.0.0.1:11666', 'listen_address': '0.0.0.0:11666', 'party': 'alice'}, {'address': '127.0.0.1:11667', 'listen_address': '0.0.0.0:11667', 'party': 'bob'}], 'runtime_config': {'field': 3, 'protocol': 2}}, 'link_desc': {'brpc_channel_connection_type': 'pooled', 'brpc_channel_protocol': 'http', 'connect_retry_interval_ms': 1000, 'connect_retry_times': 60, 'http_timeout_ms': 1200000, 'recv_timeout_ms': 1200000}}}, 'sf_init': {'address': 'local', 'parties': ['alice', 'bob']}}, 'sf_node_eval_param': {'input_path': {'alice': '/disc/home/listen/operator/local_data/alice/alice.csv', 'bob': '/disc/home/listen/operator/local_data/bob/bob.csv'}, 'key': {'alice': ['id1'], 'bob': ['id2']}, 'output_path': {'alice': '/disc/home/listen/operator/local_data/alice/psi-output.csv', 'bob': '/disc/home/listen/operator/local_data/bob/psi-output.csv'}, 'receiver': 'alice'}}
+2025-05-08 21:08:28.255 | b123fb8e1b674402ad615706dc45b148 | INFO     | module_admin.controller.task_controller:execute_task_list:48 - 已在进程 607760 中启动任务
+2025-05-08 21:08:28.256 | b123fb8e1b674402ad615706dc45b148 | INFO     | module_admin.controller.task_controller:execute_task_list:45 - args: [], kwargs: {}
+2025-05-08 21:08:28.259 | b123fb8e1b674402ad615706dc45b148 | INFO     | module_admin.controller.task_controller:execute_task_list:48 - 已在进程 607761 中启动任务
+2025-05-08 21:09:45.444 | a2531967e37f4c99a3665c6467691f23 | INFO     | module_admin.controller.task_controller:execute_task_list:40 - 获取成功
+2025-05-08 21:10:05.985 |  | INFO     | server:lifespan:17 - RuoYi-FastAPI开始启动
+2025-05-08 21:10:05.986 |  | INFO     | config.get_db:init_create_table:23 - 初始化数据库连接...
+2025-05-08 21:10:06.003 |  | INFO     | config.get_db:init_create_table:26 - 数据库连接成功
+2025-05-08 21:10:06.003 |  | INFO     | config.get_redis:create_redis_pool:19 - 开始连接redis...
+2025-05-08 21:10:06.007 |  | INFO     | config.get_redis:create_redis_pool:32 - redis连接成功
+2025-05-08 21:10:06.007 |  | INFO     | server:lifespan:21 - RuoYi-FastAPI启动成功
+2025-05-08 21:10:10.746 | b9af28332ab34f159a86399beb7436ae | INFO     | module_admin.controller.task_controller:execute_task_list:40 - 获取成功
+2025-05-08 21:10:10.748 | b9af28332ab34f159a86399beb7436ae | INFO     | module_admin.controller.task_controller:execute_task_list:45 - args: [], kwargs: {'sf_cluster_desc': {'devices': {'spu_config': {'cluster_def': {'nodes': [{'address': '127.0.0.1:11666', 'listen_address': '0.0.0.0:11666', 'party': 'alice'}, {'address': '127.0.0.1:11667', 'listen_address': '0.0.0.0:11667', 'party': 'bob'}], 'runtime_config': {'field': 3, 'protocol': 2}}, 'link_desc': {'brpc_channel_connection_type': 'pooled', 'brpc_channel_protocol': 'http', 'connect_retry_interval_ms': 1000, 'connect_retry_times': 60, 'http_timeout_ms': 1200000, 'recv_timeout_ms': 1200000}}}, 'sf_init': {'address': 'local', 'parties': ['alice', 'bob']}}, 'sf_node_eval_param': {'input_path': {'alice': '/disc/home/listen/operator/local_data/alice/alice.csv', 'bob': '/disc/home/listen/operator/local_data/bob/bob.csv'}, 'key': {'alice': ['id1'], 'bob': ['id2']}, 'output_path': {'alice': '/disc/home/listen/operator/local_data/alice/psi-output.csv', 'bob': '/disc/home/listen/operator/local_data/bob/psi-output.csv'}, 'receiver': 'alice'}}
+2025-05-08 21:10:10.753 | b9af28332ab34f159a86399beb7436ae | INFO     | module_admin.controller.task_controller:execute_task_list:48 - 已在进程 610825 中启动任务
+2025-05-08 21:10:10.754 | b9af28332ab34f159a86399beb7436ae | INFO     | module_admin.controller.task_controller:execute_task_list:45 - args: [], kwargs: {}
+2025-05-08 21:10:10.756 | b9af28332ab34f159a86399beb7436ae | INFO     | module_admin.controller.task_controller:execute_task_list:48 - 已在进程 610826 中启动任务
+2025-05-08 21:11:31.185 | 924e790ca5dc46eaa99b62c9163d5b23 | INFO     | module_admin.controller.task_controller:execute_task_list:40 - 获取成功
+2025-05-08 21:11:31.187 | 924e790ca5dc46eaa99b62c9163d5b23 | INFO     | module_admin.controller.task_controller:execute_task_list:45 - args: [], kwargs: {'sf_cluster_desc': {'devices': {'spu_config': {'cluster_def': {'nodes': [{'address': '127.0.0.1:11666', 'listen_address': '0.0.0.0:11666', 'party': 'alice'}, {'address': '127.0.0.1:11667', 'listen_address': '0.0.0.0:11667', 'party': 'bob'}], 'runtime_config': {'field': 3, 'protocol': 2}}, 'link_desc': {'brpc_channel_connection_type': 'pooled', 'brpc_channel_protocol': 'http', 'connect_retry_interval_ms': 1000, 'connect_retry_times': 60, 'http_timeout_ms': 1200000, 'recv_timeout_ms': 1200000}}}, 'sf_init': {'address': 'local', 'parties': ['alice', 'bob']}}, 'sf_node_eval_param': {'input_path': {'alice': '/disc/home/listen/operator/local_data/alice/alice.csv', 'bob': '/disc/home/listen/operator/local_data/bob/bob.csv'}, 'key': {'alice': ['id1'], 'bob': ['id2']}, 'output_path': {'alice': '/disc/home/listen/operator/local_data/alice/psi-output.csv', 'bob': '/disc/home/listen/operator/local_data/bob/psi-output.csv'}, 'receiver': 'alice'}}
+2025-05-08 21:11:31.191 | 924e790ca5dc46eaa99b62c9163d5b23 | INFO     | module_admin.controller.task_controller:execute_task_list:48 - 已在进程 625161 中启动任务
+2025-05-08 21:11:31.191 | 924e790ca5dc46eaa99b62c9163d5b23 | INFO     | module_admin.controller.task_controller:execute_task_list:45 - args: [], kwargs: {}
+2025-05-08 21:11:31.194 | 924e790ca5dc46eaa99b62c9163d5b23 | INFO     | module_admin.controller.task_controller:execute_task_list:48 - 已在进程 625162 中启动任务

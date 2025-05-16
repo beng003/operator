@@ -1,0 +1,65 @@
+dependencies: []
+func_name: split
+param:
+  sf_cluster_desc:
+    devices:
+      spu_config:
+        cluster_def:
+          nodes:
+          - address: 127.0.0.1:11666
+            listen_address: 0.0.0.0:11666
+            party: alice
+          - address: 127.0.0.1:11667
+            listen_address: 0.0.0.0:11667
+            party: bob
+          runtime_config:
+            field: 3
+            protocol: 2
+        link_desc:
+          brpc_channel_connection_type: pooled
+          brpc_channel_protocol: http
+          connect_retry_interval_ms: 1000
+          connect_retry_times: 60
+          http_timeout_ms: 1200000
+          recv_timeout_ms: 1200000
+    sf_init:
+      address: local
+      parties:
+      - alice
+      - bob
+  sf_node_eval_param:
+    data_type: vdf
+    input_path:
+      alice: /disc/home/beng003/work/RuoYi-Vue3-FastAPI/ruoyi-fastapi-backend/local_data/alice/psi-output02.csv
+      bob: /disc/home/beng003/work/RuoYi-Vue3-FastAPI/ruoyi-fastapi-backend/local_data/bob/psi-output02.csv
+    keys:
+      alice:
+      - id1
+      bob:
+      - id2
+    random_state: 1234
+    shuffle: true
+    test_output_path:
+      alice: /disc/home/beng003/work/RuoYi-Vue3-FastAPI/ruoyi-fastapi-backend/local_data/alice/test-dataset.csv
+      bob: /disc/home/beng003/work/RuoYi-Vue3-FastAPI/ruoyi-fastapi-backend/local_data/bob/test-dataset.csv
+    test_size: 0.7
+    train_output_path:
+      alice: /disc/home/beng003/work/RuoYi-Vue3-FastAPI/ruoyi-fastapi-backend/local_data/alice/train-dataset.csv
+      bob: /disc/home/beng003/work/RuoYi-Vue3-FastAPI/ruoyi-fastapi-backend/local_data/bob/train-dataset.csv
+    train_size: 0.3
+sf_output_information:
+- ids: split-output-test
+  is_in_database:
+    alice: false
+    bob: false
+  output_path:
+    alice: /mnt/disc1/beng003/platform_manage/local_data/alice/test-dataset.csv
+    bob: /mnt/disc1/beng003/platform_manage/local_data/bob/test-dataset.csv
+- ids: split-output-train
+  is_in_database:
+    alice: false
+    bob: false
+  output_path:
+    alice: /mnt/disc1/beng003/platform_manage/local_data/alice/train-dataset.csv
+    bob: /mnt/disc1/beng003/platform_manage/local_data/bob/train-dataset.csv
+task_uid: '1002'
