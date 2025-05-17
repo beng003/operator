@@ -1,0 +1,34 @@
+# 日志文件
+*.log
+logs/
+.coverage
+coverage.xml
+
+# 开发环境配置
+.envrc
+.env.*
+.gitignore
+todo.md
+pytest.ini
+
+# Python相关
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 开发工具
+.git/
+.venv/
+.vscode/
+.idea/
+
+# 项目特定文件
+requirements.txt
+tests/
+docs/
+README.md
