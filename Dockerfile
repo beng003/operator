@@ -1,7 +1,7 @@
 # 根目录执行
 # docker build --no-cache -f Dockerfile -t crpi-84gohwg2zpoyckdg.cn-hangzhou.personal.cr.aliyuncs.com/beng003_docker/operator:v0.1.0 .
-# docker build -f Dockerfile -t crpi-84gohwg2zpoyckdg.cn-hangzhou.personal.cr.aliyuncs.com/beng003_docker/operator:v0.1.0 .
-# docker build -f Dockerfile -t operator:v0.1.0 .
+# docker build -f Dockerfile -t crpi-84gohwg2zpoyckdg.cn-hangzhou.personal.cr.aliyuncs.com/beng003_docker/operator:v0.2.0 -t crpi-84gohwg2zpoyckdg.cn-hangzhou.personal.cr.aliyuncs.com/beng003_docker/operator:latest .
+# docker build -f Dockerfile -t operator:v0.2.0 .
 
 FROM crpi-84gohwg2zpoyckdg.cn-hangzhou.personal.cr.aliyuncs.com/beng003_docker/python:3.10-slim
 # 更新并安装 libgomp 以及 gcc 
