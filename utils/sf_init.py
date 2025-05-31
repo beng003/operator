@@ -44,7 +44,7 @@ import secretflow as sf
 from secretflow.device import SPU, HEU
 from secretflow.security.aggregation import SecureAggregator
 from secretflow.security.compare import PlainComparator
-
+from utils.log_util import logger
 
 class SecretFlowConfigurator:
     def __init__(self, devices: dict, sf_init: dict):
@@ -57,7 +57,7 @@ class SecretFlowConfigurator:
         self._init_sf()
         self.spu = self._init_spu()
         self.heu = self._init_heu()
-        self.parties_pyu = {it: sf.PYU(it) for it in self.sf_init.get("parties", [])}
+        self.parties_pyu = self._parties_pyu()
 
     def __enter__(self):
         """进入上下文时返回自身，以便在with块中使用"""
@@ -69,6 +69,9 @@ class SecretFlowConfigurator:
 
     def _init_sf(self) -> SPU:
         """初始化SPU设备"""
+        logger.info("self.sf_init: {}".format(self.sf_init))
+        logger.info("self.sf_init_type: {}".format(type(self.sf_init)))
+        
         if not self.sf_init:
             raise ValueError("sf_init not found in sf_cluster_desc")
         sf.init(**self.sf_init)
@@ -86,6 +89,14 @@ class SecretFlowConfigurator:
         if not heu_config:
             return None
         return HEU(**heu_config)
+    
+    def _parties_pyu(self):
+        """初始化pyu设备"""   
+        if "parties" in self.sf_init:
+            parties = self.sf_init.get("parties", [])
+        elif "cluster_config" in self.sf_init:
+            parties = list(self.sf_init.get("cluster_config", {}).get("parties", []).keys())
+        return {it: sf.PYU(it) for it in parties}
 
     def get_security_tools(self):
         """获取安全工具"""
