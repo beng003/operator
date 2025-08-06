@@ -3,10 +3,13 @@ import secretflow as sf
 from utils.yaml_util import read_yaml
 from utils.sf_init import SecretFlowConfigurator
 from utils.path_util import modify_path
+from module_task.decorator_task import capture_errors_to_queue
 
 __all__ = ["psi_csv"]
 
-def psi_csv(sf_cluster_desc, sf_node_eval_param, **kwargs):
+@capture_errors_to_queue
+def psi_csv(job_uid, sf_cluster_desc, sf_node_eval_param, **kwargs):
+    
     with SecretFlowConfigurator(**sf_cluster_desc) as sf_config:
         spu = sf_config.spu
         sf_node_eval_param["input_path"] = modify_path(sf_node_eval_param["input_path"])

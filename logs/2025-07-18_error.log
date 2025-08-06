@@ -1,0 +1,145 @@
+2025-07-18 22:41:56.420 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-18 22:41:56.422 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-18 22:41:56.424 |  | INFO     | module_admin.service.task_service:_start_monitor:56 - 进程监控线程已启动
+2025-07-18 22:43:56.095 | 9bcc7e99f1bd4775858706c00ae2c5df | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-18 22:43:56.101 | 9bcc7e99f1bd4775858706c00ae2c5df | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-18 22:43:56.102 | 9bcc7e99f1bd4775858706c00ae2c5df | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-18 22:45:19.139 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-18 22:45:19.140 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-18 22:45:19.142 |  | INFO     | module_admin.service.task_service:_start_monitor:56 - 进程监控线程已启动
+2025-07-18 22:45:36.810 | b10212ba0d9044848a2a7bcf25485055 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-18 22:45:36.812 | b10212ba0d9044848a2a7bcf25485055 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-18 22:45:36.813 | b10212ba0d9044848a2a7bcf25485055 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-18 22:45:36.815 | b10212ba0d9044848a2a7bcf25485055 | INFO     | module_admin.service.task_service:start_process:141 - 已在进程 2005121 中启动任务 psi3
+2025-07-18 22:45:36.816 | b10212ba0d9044848a2a7bcf25485055 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-18 22:45:36.822 | b10212ba0d9044848a2a7bcf25485055 | INFO     | module_admin.service.task_service:start_process:141 - 已在进程 2005122 中启动任务 psi4
+2025-07-18 22:45:44.170 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:281 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7cc2ea5e6620>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-18 22:45:44.171 |  | INFO     | module_admin.service.task_service:_monitor_processes:91 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-18 22:45:44.174 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:281 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7cc2ea5e6d70>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-18 22:45:44.175 |  | INFO     | module_admin.service.task_service:_monitor_processes:91 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-18 22:47:23.771 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-18 22:47:23.771 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-18 22:47:23.773 |  | INFO     | module_admin.service.task_service:_start_monitor:56 - 进程监控线程已启动
+2025-07-18 22:47:33.461 | f343ef4b69724fdfbc2a4c99d976c68f | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-18 22:47:33.462 | f343ef4b69724fdfbc2a4c99d976c68f | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-18 22:47:33.463 | f343ef4b69724fdfbc2a4c99d976c68f | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-18 22:47:33.468 | f343ef4b69724fdfbc2a4c99d976c68f | INFO     | module_admin.service.task_service:start_process:141 - 已在进程 2012394 中启动任务 psi3
+2025-07-18 22:47:33.469 | f343ef4b69724fdfbc2a4c99d976c68f | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-18 22:47:33.472 | f343ef4b69724fdfbc2a4c99d976c68f | INFO     | module_admin.service.task_service:start_process:141 - 已在进程 2012395 中启动任务 psi4
+2025-07-18 22:47:38.788 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 监控任务 psi3 时发生错误: 'ProcessManager' object has no attribute '_job_errors'
+2025-07-18 22:47:38.789 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 监控任务 psi4 时发生错误: 'ProcessManager' object has no attribute '_job_errors'
+2025-07-18 22:47:43.793 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 监控任务 psi3 时发生错误: 'ProcessManager' object has no attribute '_job_errors'
+2025-07-18 22:47:43.794 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 监控任务 psi4 时发生错误: 'ProcessManager' object has no attribute '_job_errors'
+2025-07-18 22:47:48.796 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 监控任务 psi3 时发生错误: 'ProcessManager' object has no attribute '_job_errors'
+2025-07-18 22:47:48.797 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 监控任务 psi4 时发生错误: 'ProcessManager' object has no attribute '_job_errors'
+2025-07-18 22:47:53.802 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 监控任务 psi3 时发生错误: 'ProcessManager' object has no attribute '_job_errors'
+2025-07-18 22:47:53.803 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 监控任务 psi4 时发生错误: 'ProcessManager' object has no attribute '_job_errors'
+2025-07-18 22:47:58.809 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 监控任务 psi3 时发生错误: 'ProcessManager' object has no attribute '_job_errors'
+2025-07-18 22:47:58.810 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 监控任务 psi4 时发生错误: 'ProcessManager' object has no attribute '_job_errors'
+2025-07-18 22:48:03.816 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 监控任务 psi3 时发生错误: 'ProcessManager' object has no attribute '_job_errors'
+2025-07-18 22:48:03.817 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 监控任务 psi4 时发生错误: 'ProcessManager' object has no attribute '_job_errors'
+2025-07-18 22:48:08.823 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 监控任务 psi3 时发生错误: 'ProcessManager' object has no attribute '_job_errors'
+2025-07-18 22:48:08.824 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 监控任务 psi4 时发生错误: 'ProcessManager' object has no attribute '_job_errors'
+2025-07-18 22:48:13.830 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 监控任务 psi3 时发生错误: 'ProcessManager' object has no attribute '_job_errors'
+2025-07-18 22:48:13.831 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 监控任务 psi4 时发生错误: 'ProcessManager' object has no attribute '_job_errors'
+2025-07-18 22:50:32.437 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-18 22:50:32.438 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-18 22:50:32.440 |  | INFO     | module_admin.service.task_service:_start_monitor:56 - 进程监控线程已启动
+2025-07-18 22:51:17.995 | 9f1f9c919848494b9dafe52847405521 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-18 22:51:17.997 | 9f1f9c919848494b9dafe52847405521 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-18 22:51:17.997 | 9f1f9c919848494b9dafe52847405521 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-18 22:51:18.003 | 9f1f9c919848494b9dafe52847405521 | INFO     | module_admin.service.task_service:start_process:141 - 已在进程 2024749 中启动任务 psi3
+2025-07-18 22:51:18.004 | 9f1f9c919848494b9dafe52847405521 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-18 22:51:18.008 | 9f1f9c919848494b9dafe52847405521 | INFO     | module_admin.service.task_service:start_process:141 - 已在进程 2024750 中启动任务 psi4
+2025-07-18 22:51:22.485 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 监控任务 psi3 时发生错误: 'Queue' object has no attribute 'pop'
+2025-07-18 22:51:22.487 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 监控任务 psi4 时发生错误: 'Queue' object has no attribute 'pop'
+2025-07-18 22:51:27.493 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 监控任务 psi3 时发生错误: 'Queue' object has no attribute 'pop'
+2025-07-18 22:51:27.494 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 监控任务 psi4 时发生错误: 'Queue' object has no attribute 'pop'
+2025-07-18 22:52:50.965 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-18 22:52:50.965 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-18 22:52:50.968 |  | INFO     | module_admin.service.task_service:_start_monitor:56 - 进程监控线程已启动
+2025-07-18 22:53:08.231 | 0a8be9b9b4a74c9b9c3010b36652ebd2 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-18 22:53:08.233 | 0a8be9b9b4a74c9b9c3010b36652ebd2 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-18 22:53:08.234 | 0a8be9b9b4a74c9b9c3010b36652ebd2 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-18 22:53:08.239 | 0a8be9b9b4a74c9b9c3010b36652ebd2 | INFO     | module_admin.service.task_service:start_process:141 - 已在进程 2032040 中启动任务 psi3
+2025-07-18 22:53:08.240 | 0a8be9b9b4a74c9b9c3010b36652ebd2 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-18 22:53:08.245 | 0a8be9b9b4a74c9b9c3010b36652ebd2 | INFO     | module_admin.service.task_service:start_process:141 - 已在进程 2032041 中启动任务 psi4
+2025-07-18 22:53:15.999 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:281 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7a17b3386770>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-18 22:53:15.999 |  | INFO     | module_admin.service.task_service:_monitor_processes:91 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-18 22:53:16.004 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:281 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7a17b3387160>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-18 22:53:16.004 |  | INFO     | module_admin.service.task_service:_monitor_processes:91 - 任务 psi4 已结束，已从进程列表中移除

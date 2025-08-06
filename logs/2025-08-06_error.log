@@ -1,0 +1,33 @@
+2025-08-06 18:09:21.855 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-08-06 18:09:21.855 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-08-06 18:09:21.856 |  | INFO     | module_admin.service.task_service:_start_monitor:83 - 进程监控线程已启动
+2025-08-06 18:16:42.601 | 7bde59859312454f94f39ef06f4b9b77 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [{"job_uid": "psi3", "job_executor": "default", "invoke_target": "module_task.scheduler_test.job", "job_args": "", "job_kwargs": ""}, {"job_uid": "psi4", "job_executor": "default", "invoke_target": "module_task.scheduler_test.job", "job_args": "", "job_kwargs": ""}]
+2025-08-06 18:16:42.603 | 7bde59859312454f94f39ef06f4b9b77 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-08-06 18:16:42.603 | 7bde59859312454f94f39ef06f4b9b77 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-08-06 18:16:42.607 | 7bde59859312454f94f39ef06f4b9b77 | INFO     | module_admin.service.task_service:start_process:189 - 已在进程 1407692 中启动任务 psi3
+2025-08-06 18:16:42.608 | 7bde59859312454f94f39ef06f4b9b77 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-08-06 18:16:42.611 | 7bde59859312454f94f39ef06f4b9b77 | INFO     | module_admin.service.task_service:start_process:189 - 已在进程 1407693 中启动任务 psi4
+2025-08-06 18:16:44.493 |  | DEBUG    | module_task.decorator_task:wrapper:24 - 已记录任务 psi4 的错误到队列
+2025-08-06 18:16:44.494 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi4 的错误到队列
+2025-08-06 18:16:44.578 |  | DEBUG    | module_task.decorator_task:wrapper:24 - 已记录任务 psi3 的错误到队列
+2025-08-06 18:16:44.579 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-08-06 18:16:47.308 |  | ERROR    | module_admin.service.task_service:_monitor_processes:114 - 任务 psi3 错误: 
+Traceback (most recent call last):
+  File "/disc/home/beng003/work/operator/module_task/decorator_task.py", line 19, in wrapper
+    return func(*args, **kwargs)  # 修改2: 保持原有参数传递
+  File "/disc/home/beng003/work/operator/module_task/scheduler_test.py", line 13, in job
+    print(1/0)
+ZeroDivisionError: division by zero
+
+2025-08-06 18:16:47.332 |  | INFO     | module_admin.service.task_service:_send_callback_notification:335 - 回调通知已发送: 200
+2025-08-06 18:16:47.333 |  | INFO     | module_admin.service.task_service:_monitor_processes:127 - 任务 psi3 已结束，已从进程列表中移除
+2025-08-06 18:16:47.335 |  | ERROR    | module_admin.service.task_service:_monitor_processes:114 - 任务 psi4 错误: 
+Traceback (most recent call last):
+  File "/disc/home/beng003/work/operator/module_task/decorator_task.py", line 19, in wrapper
+    return func(*args, **kwargs)  # 修改2: 保持原有参数传递
+  File "/disc/home/beng003/work/operator/module_task/scheduler_test.py", line 13, in job
+    print(1/0)
+ZeroDivisionError: division by zero
+
+2025-08-06 18:16:47.345 |  | INFO     | module_admin.service.task_service:_send_callback_notification:335 - 回调通知已发送: 200
+2025-08-06 18:16:47.346 |  | INFO     | module_admin.service.task_service:_monitor_processes:127 - 任务 psi4 已结束，已从进程列表中移除

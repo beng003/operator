@@ -11,4 +11,5 @@ COPY requirements-docker.txt .
 RUN pip install -r requirements-docker.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 COPY . .
 EXPOSE 8088
-CMD ["python3", "app.py"]
+RUN chmod +x ./scripts/entrypoint.sh
+CMD ["/bin/bash", "-c", "./scripts/entrypoint.sh"]

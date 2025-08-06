@@ -1,0 +1,889 @@
+2025-07-21 21:24:54.528 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 21:24:54.529 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 21:24:54.532 |  | INFO     | module_admin.service.task_service:_start_monitor:56 - 进程监控线程已启动
+2025-07-21 21:25:16.395 | b215ae27e5a447d6ac16bbc99d6a271c | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 21:25:16.396 | b215ae27e5a447d6ac16bbc99d6a271c | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 21:25:16.397 | b215ae27e5a447d6ac16bbc99d6a271c | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 21:25:16.401 | b215ae27e5a447d6ac16bbc99d6a271c | INFO     | module_admin.service.task_service:start_process:141 - 已在进程 1835017 中启动任务 psi3
+2025-07-21 21:25:16.402 | b215ae27e5a447d6ac16bbc99d6a271c | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 21:25:16.406 | b215ae27e5a447d6ac16bbc99d6a271c | INFO     | module_admin.service.task_service:start_process:141 - 已在进程 1835018 中启动任务 psi4
+2025-07-21 21:25:24.563 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:283 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7132ea3ca6e0>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-21 21:25:24.564 |  | INFO     | module_admin.service.task_service:_monitor_processes:91 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 21:25:24.567 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:283 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7132ea3cae60>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-21 21:25:24.567 |  | INFO     | module_admin.service.task_service:_monitor_processes:91 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 21:27:42.022 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 21:27:42.023 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 21:27:42.025 |  | INFO     | module_admin.service.task_service:_start_monitor:56 - 进程监控线程已启动
+2025-07-21 21:27:43.383 | af7e7146ec5a467d9ff61288ecd9e172 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 21:27:43.385 | af7e7146ec5a467d9ff61288ecd9e172 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 21:27:43.385 | af7e7146ec5a467d9ff61288ecd9e172 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 21:27:43.391 | af7e7146ec5a467d9ff61288ecd9e172 | INFO     | module_admin.service.task_service:start_process:143 - 已在进程 1842041 中启动任务 psi3
+2025-07-21 21:27:43.392 | af7e7146ec5a467d9ff61288ecd9e172 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 21:27:43.396 | af7e7146ec5a467d9ff61288ecd9e172 | INFO     | module_admin.service.task_service:start_process:143 - 已在进程 1842042 中启动任务 psi4
+2025-07-21 21:27:52.038 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:285 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x798be12727d0>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-21 21:27:52.039 |  | INFO     | module_admin.service.task_service:_monitor_processes:93 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 21:27:52.043 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:285 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x798be1272ec0>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-21 21:27:52.044 |  | INFO     | module_admin.service.task_service:_monitor_processes:93 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 21:28:51.221 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 21:28:51.222 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 21:28:51.224 |  | INFO     | module_admin.service.task_service:_start_monitor:56 - 进程监控线程已启动
+2025-07-21 21:28:56.146 | d157110f89024e8e9c02b6a1ddd17ecb | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 21:28:56.148 | d157110f89024e8e9c02b6a1ddd17ecb | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 21:28:56.149 | d157110f89024e8e9c02b6a1ddd17ecb | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 21:28:56.154 | d157110f89024e8e9c02b6a1ddd17ecb | INFO     | module_admin.service.task_service:start_process:143 - 已在进程 1846350 中启动任务 psi3
+2025-07-21 21:28:56.155 | d157110f89024e8e9c02b6a1ddd17ecb | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 21:28:56.159 | d157110f89024e8e9c02b6a1ddd17ecb | INFO     | module_admin.service.task_service:start_process:143 - 已在进程 1846351 中启动任务 psi4
+2025-07-21 21:29:01.240 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:285 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7150596aa8f0>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-21 21:29:01.241 |  | INFO     | module_admin.service.task_service:_monitor_processes:93 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 21:29:01.244 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:285 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7150596aafe0>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-21 21:29:01.245 |  | INFO     | module_admin.service.task_service:_monitor_processes:93 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 21:34:57.502 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 21:34:57.504 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 21:34:57.505 |  | INFO     | module_admin.service.task_service:_start_monitor:56 - 进程监控线程已启动
+2025-07-21 21:35:00.982 | 05711da3908742cdb60d4fd291b7ca64 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 21:35:00.984 | 05711da3908742cdb60d4fd291b7ca64 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 21:35:00.984 | 05711da3908742cdb60d4fd291b7ca64 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 21:35:00.989 | 05711da3908742cdb60d4fd291b7ca64 | INFO     | module_admin.service.task_service:start_process:143 - 已在进程 1863754 中启动任务 psi3
+2025-07-21 21:35:00.990 | 05711da3908742cdb60d4fd291b7ca64 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 21:35:00.994 | 05711da3908742cdb60d4fd291b7ca64 | INFO     | module_admin.service.task_service:start_process:143 - 已在进程 1863755 中启动任务 psi4
+2025-07-21 21:35:07.512 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:285 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x75ecbff52800>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-21 21:35:07.512 |  | INFO     | module_admin.service.task_service:_monitor_processes:93 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 21:35:07.515 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:285 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x75ecbff52ef0>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-21 21:35:07.515 |  | INFO     | module_admin.service.task_service:_monitor_processes:93 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 21:36:21.902 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 21:36:21.903 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 21:36:21.904 |  | INFO     | module_admin.service.task_service:_start_monitor:56 - 进程监控线程已启动
+2025-07-21 21:40:58.335 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 21:40:58.335 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 21:40:58.336 |  | INFO     | module_admin.service.task_service:_start_monitor:56 - 进程监控线程已启动
+2025-07-21 21:41:12.097 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 21:41:12.097 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 21:41:12.098 |  | INFO     | module_admin.service.task_service:_start_monitor:56 - 进程监控线程已启动
+2025-07-21 21:41:15.412 | e73178c8b3df459a9b8d9309ab6469b7 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 21:41:15.413 | e73178c8b3df459a9b8d9309ab6469b7 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 21:41:15.414 | e73178c8b3df459a9b8d9309ab6469b7 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 21:41:15.418 | e73178c8b3df459a9b8d9309ab6469b7 | INFO     | module_admin.service.task_service:start_process:143 - 已在进程 1882701 中启动任务 psi3
+2025-07-21 21:41:15.419 | e73178c8b3df459a9b8d9309ab6469b7 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 21:41:15.421 | e73178c8b3df459a9b8d9309ab6469b7 | INFO     | module_admin.service.task_service:start_process:143 - 已在进程 1882702 中启动任务 psi4
+2025-07-21 21:41:22.109 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:285 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x75da9ced6800>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-21 21:41:22.109 |  | INFO     | module_admin.service.task_service:_monitor_processes:93 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 21:41:22.111 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:285 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x75da9ced6f50>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-21 21:41:22.111 |  | INFO     | module_admin.service.task_service:_monitor_processes:93 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 21:41:53.913 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 21:41:53.913 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 21:41:53.914 |  | INFO     | module_admin.service.task_service:_start_monitor:56 - 进程监控线程已启动
+2025-07-21 21:41:56.000 | 5f8baa34f903411b9888b5ff5ae16a68 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 21:41:56.001 | 5f8baa34f903411b9888b5ff5ae16a68 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 21:41:56.002 | 5f8baa34f903411b9888b5ff5ae16a68 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 21:41:56.005 | 5f8baa34f903411b9888b5ff5ae16a68 | INFO     | module_admin.service.task_service:start_process:143 - 已在进程 1886985 中启动任务 psi3
+2025-07-21 21:41:56.006 | 5f8baa34f903411b9888b5ff5ae16a68 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 21:41:56.009 | 5f8baa34f903411b9888b5ff5ae16a68 | INFO     | module_admin.service.task_service:start_process:143 - 已在进程 1886986 中启动任务 psi4
+2025-07-21 21:41:58.468 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 21:41:58.537 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi4 的错误到队列
+2025-07-21 21:42:03.929 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:285 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7ad7d9c66950>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-21 21:42:03.929 |  | INFO     | module_admin.service.task_service:_monitor_processes:93 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 21:42:03.933 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:285 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7ad7d9c66f80>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-21 21:42:03.933 |  | INFO     | module_admin.service.task_service:_monitor_processes:93 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 21:42:50.352 | dae6eec0c9b44339a4ea7858c9ae21a7 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.psi.psi_csv",
+        "job_args": "",
+        "job_kwargs": "{\"sf_cluster_desc\": {\"devices\": {\"spu_config\": {\"cluster_def\": {\"nodes\": [{\"address\": \"127.0.0.1:11666\", \"listen_address\": \"0.0.0.0:11666\", \"party\": \"alice\"}, {\"address\": \"127.0.0.1:11667\", \"listen_address\": \"0.0.0.0:11667\", \"party\": \"bob\"}], \"runtime_config\": {\"field\": 3, \"protocol\": 2}}, \"link_desc\": {\"brpc_channel_connection_type\": \"pooled\", \"brpc_channel_protocol\": \"http\", \"connect_retry_interval_ms\": 1000, \"connect_retry_times\": 60, \"http_timeout_ms\": 1200000, \"recv_timeout_ms\": 1200000}}}, \"sf_init\": {\"address\": \"local\", \"parties\": [\"alice\", \"bob\"]}}, \"sf_node_eval_param\": {\"input_path\": {\"alice\": \"alice.csv\", \"bob\": \"bob.csv\"}, \"key\": {\"alice\": [\"id1\"], \"bob\": [\"id2\"]}, \"output_path\": {\"alice\": \"psi-output.csv\", \"bob\": \"psi-output.csv\"}, \"receiver\": \"alice\"}}"
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 21:42:50.354 | dae6eec0c9b44339a4ea7858c9ae21a7 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 21:42:50.355 | dae6eec0c9b44339a4ea7858c9ae21a7 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {'sf_cluster_desc': {'devices': {'spu_config': {'cluster_def': {'nodes': [{'address': '127.0.0.1:11666', 'listen_address': '0.0.0.0:11666', 'party': 'alice'}, {'address': '127.0.0.1:11667', 'listen_address': '0.0.0.0:11667', 'party': 'bob'}], 'runtime_config': {'field': 3, 'protocol': 2}}, 'link_desc': {'brpc_channel_connection_type': 'pooled', 'brpc_channel_protocol': 'http', 'connect_retry_interval_ms': 1000, 'connect_retry_times': 60, 'http_timeout_ms': 1200000, 'recv_timeout_ms': 1200000}}}, 'sf_init': {'address': 'local', 'parties': ['alice', 'bob']}}, 'sf_node_eval_param': {'input_path': {'alice': 'alice.csv', 'bob': 'bob.csv'}, 'key': {'alice': ['id1'], 'bob': ['id2']}, 'output_path': {'alice': 'psi-output.csv', 'bob': 'psi-output.csv'}, 'receiver': 'alice'}}
+2025-07-21 21:42:50.360 | dae6eec0c9b44339a4ea7858c9ae21a7 | INFO     | module_admin.service.task_service:start_process:143 - 已在进程 1891300 中启动任务 psi3
+2025-07-21 21:42:50.360 | dae6eec0c9b44339a4ea7858c9ae21a7 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 21:42:50.364 | dae6eec0c9b44339a4ea7858c9ae21a7 | INFO     | module_admin.service.task_service:start_process:143 - 已在进程 1891303 中启动任务 psi4
+2025-07-21 21:42:53.318 |  | INFO     | utils.sf_init:_init_sf:72 - self.sf_init: {'address': 'local', 'parties': ['alice', 'bob']}
+2025-07-21 21:42:53.319 |  | INFO     | utils.sf_init:_init_sf:73 - self.sf_init_type: <class 'dict'>
+2025-07-21 21:42:53.319 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi4 的错误到队列
+2025-07-21 21:42:58.987 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:285 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7ad7d9c676d0>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-21 21:42:58.988 |  | INFO     | module_admin.service.task_service:_monitor_processes:93 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 21:43:09.005 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:285 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7ad7d9c677c0>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-21 21:43:09.006 |  | INFO     | module_admin.service.task_service:_monitor_processes:93 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 21:44:05.192 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 21:44:05.193 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 21:44:05.194 |  | INFO     | module_admin.service.task_service:_start_monitor:56 - 进程监控线程已启动
+2025-07-21 21:45:37.824 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 21:45:37.825 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 21:45:37.827 |  | INFO     | module_admin.service.task_service:_start_monitor:56 - 进程监控线程已启动
+2025-07-21 21:45:40.878 | 500d6d97693247328fcf2cf43a54db5a | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.psi.psi_csv",
+        "job_args": "",
+        "job_kwargs": "{\"sf_cluster_desc\": {\"devices\": {\"spu_config\": {\"cluster_def\": {\"nodes\": [{\"address\": \"127.0.0.1:11666\", \"listen_address\": \"0.0.0.0:11666\", \"party\": \"alice\"}, {\"address\": \"127.0.0.1:11667\", \"listen_address\": \"0.0.0.0:11667\", \"party\": \"bob\"}], \"runtime_config\": {\"field\": 3, \"protocol\": 2}}, \"link_desc\": {\"brpc_channel_connection_type\": \"pooled\", \"brpc_channel_protocol\": \"http\", \"connect_retry_interval_ms\": 1000, \"connect_retry_times\": 60, \"http_timeout_ms\": 1200000, \"recv_timeout_ms\": 1200000}}}, \"sf_init\": {\"address\": \"local\", \"parties\": [\"alice\", \"bob\"]}}, \"sf_node_eval_param\": {\"input_path\": {\"alice\": \"alice.csv\", \"bob\": \"bob.csv\"}, \"key\": {\"alice\": [\"id1\"], \"bob\": [\"id2\"]}, \"output_path\": {\"alice\": \"psi-output.csv\", \"bob\": \"psi-output.csv\"}, \"receiver\": \"alice\"}}"
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 21:45:40.880 | 500d6d97693247328fcf2cf43a54db5a | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 21:45:40.881 | 500d6d97693247328fcf2cf43a54db5a | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {'sf_cluster_desc': {'devices': {'spu_config': {'cluster_def': {'nodes': [{'address': '127.0.0.1:11666', 'listen_address': '0.0.0.0:11666', 'party': 'alice'}, {'address': '127.0.0.1:11667', 'listen_address': '0.0.0.0:11667', 'party': 'bob'}], 'runtime_config': {'field': 3, 'protocol': 2}}, 'link_desc': {'brpc_channel_connection_type': 'pooled', 'brpc_channel_protocol': 'http', 'connect_retry_interval_ms': 1000, 'connect_retry_times': 60, 'http_timeout_ms': 1200000, 'recv_timeout_ms': 1200000}}}, 'sf_init': {'address': 'local', 'parties': ['alice', 'bob']}}, 'sf_node_eval_param': {'input_path': {'alice': 'alice.csv', 'bob': 'bob.csv'}, 'key': {'alice': ['id1'], 'bob': ['id2']}, 'output_path': {'alice': 'psi-output.csv', 'bob': 'psi-output.csv'}, 'receiver': 'alice'}}
+2025-07-21 21:45:40.885 | 500d6d97693247328fcf2cf43a54db5a | INFO     | module_admin.service.task_service:start_process:143 - 已在进程 1918680 中启动任务 psi3
+2025-07-21 21:45:40.886 | 500d6d97693247328fcf2cf43a54db5a | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 21:45:40.889 | 500d6d97693247328fcf2cf43a54db5a | INFO     | module_admin.service.task_service:start_process:143 - 已在进程 1918681 中启动任务 psi4
+2025-07-21 21:45:43.889 |  | INFO     | utils.sf_init:_init_sf:72 - self.sf_init: {'address': 'local', 'parties': ['alice', 'bob']}
+2025-07-21 21:45:43.889 |  | INFO     | utils.sf_init:_init_sf:73 - self.sf_init_type: <class 'dict'>
+2025-07-21 21:45:47.840 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:285 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f05f59de800>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-21 21:45:47.840 |  | INFO     | module_admin.service.task_service:_monitor_processes:93 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 21:45:58.237 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 21:46:02.861 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:285 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f05f59def20>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-21 21:46:02.862 |  | INFO     | module_admin.service.task_service:_monitor_processes:93 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 21:55:15.130 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 21:55:15.131 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 21:55:15.132 |  | INFO     | module_admin.service.task_service:_start_monitor:61 - 进程监控线程已启动
+2025-07-21 22:04:44.738 | 7f8db45af5a743b695013d0adb98f21a | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [{"job_uid": "psi3", "job_executor": "default", "invoke_target": "module_task.scheduler_test.job", "job_args": "", "job_kwargs": ""}]
+2025-07-21 22:04:44.739 | 7f8db45af5a743b695013d0adb98f21a | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 22:04:44.739 | 7f8db45af5a743b695013d0adb98f21a | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:04:44.742 | 7f8db45af5a743b695013d0adb98f21a | INFO     | module_admin.service.task_service:start_process:161 - 已在进程 2001873 中启动任务 psi3
+2025-07-21 22:04:46.471 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 22:04:50.678 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:309 - 发送回调通知失败: HTTPConnectionPool(host='dag_scheduler', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7deb62576680>: Failed to resolve 'dag_scheduler' ([Errno -3] Temporary failure in name resolution)"))
+2025-07-21 22:04:50.678 |  | INFO     | module_admin.service.task_service:_monitor_processes:100 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 22:10:48.692 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 22:10:48.692 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 22:10:48.693 |  | INFO     | module_admin.service.task_service:_start_monitor:61 - 进程监控线程已启动
+2025-07-21 22:11:04.579 | de62745469864f7e94235eded60cbbfe | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [{"job_uid": "psi3", "job_executor": "default", "invoke_target": "module_task.scheduler_test.job", "job_args": "", "job_kwargs": ""}]
+2025-07-21 22:11:04.581 | de62745469864f7e94235eded60cbbfe | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 22:11:04.582 | de62745469864f7e94235eded60cbbfe | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:11:04.585 | de62745469864f7e94235eded60cbbfe | INFO     | module_admin.service.task_service:start_process:161 - 已在进程 2038614 中启动任务 psi3
+2025-07-21 22:11:06.215 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 22:11:08.725 |  | INFO     | module_admin.service.task_service:_send_callback_notification:306 - 回调通知已发送: 200
+2025-07-21 22:11:08.726 |  | INFO     | module_admin.service.task_service:_monitor_processes:100 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 22:21:25.639 | 3eb7bd4bb67c41b9b913b6bd3a8fcd31 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [{"job_uid": "psi3", "job_executor": "default", "invoke_target": "module_task.scheduler_test.job", "job_args": "", "job_kwargs": ""}]
+2025-07-21 22:21:25.640 | 3eb7bd4bb67c41b9b913b6bd3a8fcd31 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 22:21:25.641 | 3eb7bd4bb67c41b9b913b6bd3a8fcd31 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:21:25.644 | 3eb7bd4bb67c41b9b913b6bd3a8fcd31 | INFO     | module_admin.service.task_service:start_process:161 - 已在进程 2083671 中启动任务 psi3
+2025-07-21 22:21:27.396 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 22:21:29.364 |  | INFO     | module_admin.service.task_service:_send_callback_notification:306 - 回调通知已发送: 200
+2025-07-21 22:21:29.366 |  | INFO     | module_admin.service.task_service:_monitor_processes:100 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 22:22:19.361 | 881d94e6e86540648ea93645da07bac8 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [{"job_uid": "psi3", "job_executor": "default", "invoke_target": "module_task.scheduler_test.job", "job_args": "", "job_kwargs": ""}]
+2025-07-21 22:22:19.362 | 881d94e6e86540648ea93645da07bac8 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 22:22:19.363 | 881d94e6e86540648ea93645da07bac8 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:22:19.368 | 881d94e6e86540648ea93645da07bac8 | INFO     | module_admin.service.task_service:start_process:161 - 已在进程 2089312 中启动任务 psi3
+2025-07-21 22:22:20.946 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 22:22:24.431 |  | INFO     | module_admin.service.task_service:_send_callback_notification:306 - 回调通知已发送: 200
+2025-07-21 22:22:24.432 |  | INFO     | module_admin.service.task_service:_monitor_processes:100 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 22:23:26.393 | 61357b24dee14609b8f552d5f91cf516 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [{"job_uid": "psi3", "job_executor": "default", "invoke_target": "module_task.scheduler_test.job", "job_args": "", "job_kwargs": ""}]
+2025-07-21 22:23:26.394 | 61357b24dee14609b8f552d5f91cf516 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 22:23:26.395 | 61357b24dee14609b8f552d5f91cf516 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:23:26.398 | 61357b24dee14609b8f552d5f91cf516 | INFO     | module_admin.service.task_service:start_process:161 - 已在进程 2096399 中启动任务 psi3
+2025-07-21 22:23:28.147 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 22:23:29.508 |  | INFO     | module_admin.service.task_service:_send_callback_notification:306 - 回调通知已发送: 200
+2025-07-21 22:23:29.509 |  | INFO     | module_admin.service.task_service:_monitor_processes:100 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 22:26:17.216 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 22:26:17.216 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 22:26:17.217 |  | INFO     | module_admin.service.task_service:_start_monitor:61 - 进程监控线程已启动
+2025-07-21 22:26:28.654 | 98f868bc620e43d8a147735b5db5f295 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 22:26:28.655 | 98f868bc620e43d8a147735b5db5f295 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 22:26:28.656 | 98f868bc620e43d8a147735b5db5f295 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:26:28.659 | 98f868bc620e43d8a147735b5db5f295 | INFO     | module_admin.service.task_service:start_process:162 - 已在进程 2113036 中启动任务 psi3
+2025-07-21 22:26:28.660 | 98f868bc620e43d8a147735b5db5f295 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:26:28.662 | 98f868bc620e43d8a147735b5db5f295 | INFO     | module_admin.service.task_service:start_process:162 - 已在进程 2113037 中启动任务 psi4
+2025-07-21 22:26:30.346 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi4 的错误到队列
+2025-07-21 22:26:30.686 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 22:26:32.232 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi3 捕获到错误: None
+2025-07-21 22:26:32.235 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:310 - 发送回调通知失败: HTTPConnectionPool(host='127.0.0.1', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7eea6eeca800>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-07-21 22:26:32.236 |  | INFO     | module_admin.service.task_service:_monitor_processes:101 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 22:26:32.237 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi4 捕获到错误: None
+2025-07-21 22:26:32.239 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:310 - 发送回调通知失败: HTTPConnectionPool(host='127.0.0.1', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7eea6eecb280>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-07-21 22:26:32.240 |  | INFO     | module_admin.service.task_service:_monitor_processes:101 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 22:27:50.715 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 22:27:50.716 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 22:27:50.718 |  | INFO     | module_admin.service.task_service:_start_monitor:61 - 进程监控线程已启动
+2025-07-21 22:27:55.843 | bd4976e9ea114341a9b6d7dcbf710415 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 22:27:55.847 | bd4976e9ea114341a9b6d7dcbf710415 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 22:27:55.848 | bd4976e9ea114341a9b6d7dcbf710415 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:27:55.853 | bd4976e9ea114341a9b6d7dcbf710415 | INFO     | module_admin.service.task_service:start_process:162 - 已在进程 2119328 中启动任务 psi3
+2025-07-21 22:27:55.854 | bd4976e9ea114341a9b6d7dcbf710415 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:27:55.859 | bd4976e9ea114341a9b6d7dcbf710415 | INFO     | module_admin.service.task_service:start_process:162 - 已在进程 2119329 中启动任务 psi4
+2025-07-21 22:28:00.806 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 22:28:01.245 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi4 的错误到队列
+2025-07-21 22:28:05.736 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi3 捕获到错误: None
+2025-07-21 22:28:13.341 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:310 - 发送回调通知失败: HTTPConnectionPool(host='127.0.0.1', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x75395c555ba0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-07-21 22:28:13.342 |  | INFO     | module_admin.service.task_service:_monitor_processes:101 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 22:28:13.343 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi4 捕获到错误: None
+2025-07-21 22:28:13.354 |  | ERROR    | module_admin.service.task_service:_send_callback_notification:310 - 发送回调通知失败: HTTPConnectionPool(host='127.0.0.1', port=9099): Max retries exceeded with url: /scheduler/job_completed (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x75395d6bedd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-07-21 22:28:13.355 |  | INFO     | module_admin.service.task_service:_monitor_processes:101 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 22:28:41.133 | b4ade1db0bd64a34a19976b8a7746e58 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 22:28:41.135 | b4ade1db0bd64a34a19976b8a7746e58 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 22:28:41.136 | b4ade1db0bd64a34a19976b8a7746e58 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:28:41.140 | b4ade1db0bd64a34a19976b8a7746e58 | INFO     | module_admin.service.task_service:start_process:162 - 已在进程 2123019 中启动任务 psi3
+2025-07-21 22:28:41.141 | b4ade1db0bd64a34a19976b8a7746e58 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:28:41.146 | b4ade1db0bd64a34a19976b8a7746e58 | INFO     | module_admin.service.task_service:start_process:162 - 已在进程 2123020 中启动任务 psi4
+2025-07-21 22:28:45.621 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 22:28:46.070 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi4 的错误到队列
+2025-07-21 22:28:48.392 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi3 捕获到错误: None
+2025-07-21 22:29:57.856 |  | INFO     | module_admin.service.task_service:_send_callback_notification:307 - 回调通知已发送: 200
+2025-07-21 22:29:57.858 |  | INFO     | module_admin.service.task_service:_monitor_processes:101 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 22:29:57.860 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi4 捕获到错误: None
+2025-07-21 22:30:03.313 |  | INFO     | module_admin.service.task_service:_send_callback_notification:307 - 回调通知已发送: 200
+2025-07-21 22:30:03.315 |  | INFO     | module_admin.service.task_service:_monitor_processes:101 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 22:30:49.829 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 22:30:49.829 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 22:30:49.830 |  | INFO     | module_admin.service.task_service:_start_monitor:61 - 进程监控线程已启动
+2025-07-21 22:31:00.421 | 524e0f31a691417c896cf277e77a4314 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 22:31:00.422 | 524e0f31a691417c896cf277e77a4314 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 22:31:00.422 | 524e0f31a691417c896cf277e77a4314 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:31:00.426 | 524e0f31a691417c896cf277e77a4314 | INFO     | module_admin.service.task_service:start_process:161 - 已在进程 2138686 中启动任务 psi3
+2025-07-21 22:31:00.427 | 524e0f31a691417c896cf277e77a4314 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:31:00.429 | 524e0f31a691417c896cf277e77a4314 | INFO     | module_admin.service.task_service:start_process:161 - 已在进程 2138687 中启动任务 psi4
+2025-07-21 22:31:02.192 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi4 的错误到队列
+2025-07-21 22:31:02.514 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 22:31:04.853 |  | INFO     | module_admin.service.task_service:_send_callback_notification:306 - 回调通知已发送: 200
+2025-07-21 22:31:04.854 |  | INFO     | module_admin.service.task_service:_monitor_processes:100 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 22:31:04.860 |  | INFO     | module_admin.service.task_service:_send_callback_notification:306 - 回调通知已发送: 200
+2025-07-21 22:31:04.860 |  | INFO     | module_admin.service.task_service:_monitor_processes:100 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 22:32:07.011 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 22:32:07.011 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 22:32:07.012 |  | INFO     | module_admin.service.task_service:_start_monitor:61 - 进程监控线程已启动
+2025-07-21 22:32:11.196 | 1694c9e0fa0f42fa9e85c4aa8b3283ca | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 22:32:11.197 | 1694c9e0fa0f42fa9e85c4aa8b3283ca | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 22:32:11.198 | 1694c9e0fa0f42fa9e85c4aa8b3283ca | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:32:11.201 | 1694c9e0fa0f42fa9e85c4aa8b3283ca | INFO     | module_admin.service.task_service:start_process:163 - 已在进程 2146133 中启动任务 psi3
+2025-07-21 22:32:11.201 | 1694c9e0fa0f42fa9e85c4aa8b3283ca | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:32:11.203 | 1694c9e0fa0f42fa9e85c4aa8b3283ca | INFO     | module_admin.service.task_service:start_process:163 - 已在进程 2146135 中启动任务 psi4
+2025-07-21 22:32:12.837 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 22:32:12.838 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi4 的错误到队列
+2025-07-21 22:32:17.023 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi3 捕获到错误: None
+2025-07-21 22:32:17.053 |  | INFO     | module_admin.service.task_service:_send_callback_notification:308 - 回调通知已发送: 200
+2025-07-21 22:32:17.054 |  | INFO     | module_admin.service.task_service:_monitor_processes:102 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 22:32:17.055 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi4 捕获到错误: None
+2025-07-21 22:32:17.061 |  | INFO     | module_admin.service.task_service:_send_callback_notification:308 - 回调通知已发送: 200
+2025-07-21 22:32:17.062 |  | INFO     | module_admin.service.task_service:_monitor_processes:102 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 22:32:50.301 | 8bbfddfe78a8407181842c16cd469436 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 22:32:50.302 | 8bbfddfe78a8407181842c16cd469436 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 22:32:50.303 | 8bbfddfe78a8407181842c16cd469436 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:32:50.305 | 8bbfddfe78a8407181842c16cd469436 | INFO     | module_admin.service.task_service:start_process:163 - 已在进程 2150476 中启动任务 psi3
+2025-07-21 22:32:50.306 | 8bbfddfe78a8407181842c16cd469436 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:32:50.308 | 8bbfddfe78a8407181842c16cd469436 | INFO     | module_admin.service.task_service:start_process:163 - 已在进程 2150477 中启动任务 psi4
+2025-07-21 22:32:52.025 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi4 的错误到队列
+2025-07-21 22:32:52.093 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 22:32:57.103 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi3 捕获到错误: None
+2025-07-21 22:32:57.111 |  | INFO     | module_admin.service.task_service:_send_callback_notification:308 - 回调通知已发送: 200
+2025-07-21 22:32:57.111 |  | INFO     | module_admin.service.task_service:_monitor_processes:102 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 22:32:57.112 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi4 捕获到错误: None
+2025-07-21 22:32:57.118 |  | INFO     | module_admin.service.task_service:_send_callback_notification:308 - 回调通知已发送: 200
+2025-07-21 22:32:57.118 |  | INFO     | module_admin.service.task_service:_monitor_processes:102 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 22:33:16.625 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 22:33:16.626 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 22:33:16.628 |  | INFO     | module_admin.service.task_service:_start_monitor:61 - 进程监控线程已启动
+2025-07-21 22:33:20.013 | 6bc1aed70bb74f4dab74df4fc2028f8b | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 22:33:20.016 | 6bc1aed70bb74f4dab74df4fc2028f8b | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 22:33:20.016 | 6bc1aed70bb74f4dab74df4fc2028f8b | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:33:20.023 | 6bc1aed70bb74f4dab74df4fc2028f8b | INFO     | module_admin.service.task_service:start_process:163 - 已在进程 2154954 中启动任务 psi3
+2025-07-21 22:33:20.024 | 6bc1aed70bb74f4dab74df4fc2028f8b | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:33:20.027 | 6bc1aed70bb74f4dab74df4fc2028f8b | INFO     | module_admin.service.task_service:start_process:163 - 已在进程 2154955 中启动任务 psi4
+2025-07-21 22:33:58.340 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi4 的错误到队列
+2025-07-21 22:34:11.688 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi4 捕获到错误: None
+2025-07-21 22:35:45.089 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 22:36:08.223 |  | INFO     | module_admin.service.task_service:_send_callback_notification:308 - 回调通知已发送: 200
+2025-07-21 22:36:08.228 |  | INFO     | module_admin.service.task_service:_monitor_processes:102 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 22:36:13.235 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi3 捕获到错误: None
+2025-07-21 22:36:25.082 |  | INFO     | module_admin.service.task_service:_send_callback_notification:308 - 回调通知已发送: 200
+2025-07-21 22:36:25.084 |  | INFO     | module_admin.service.task_service:_monitor_processes:102 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 22:38:48.606 | 16d3c9166e374bbfb0051dea9742b234 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 22:38:48.609 | 16d3c9166e374bbfb0051dea9742b234 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 22:38:48.610 | 16d3c9166e374bbfb0051dea9742b234 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:38:48.614 | 16d3c9166e374bbfb0051dea9742b234 | INFO     | module_admin.service.task_service:start_process:163 - 已在进程 2188002 中启动任务 psi3
+2025-07-21 22:38:48.615 | 16d3c9166e374bbfb0051dea9742b234 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:38:48.619 | 16d3c9166e374bbfb0051dea9742b234 | INFO     | module_admin.service.task_service:start_process:163 - 已在进程 2188005 中启动任务 psi4
+2025-07-21 22:38:53.646 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 22:38:54.845 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi4 的错误到队列
+2025-07-21 22:39:13.566 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi3 捕获到错误: None
+2025-07-21 22:39:13.590 |  | INFO     | module_admin.service.task_service:_send_callback_notification:308 - 回调通知已发送: 200
+2025-07-21 22:39:13.592 |  | INFO     | module_admin.service.task_service:_monitor_processes:102 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 22:39:13.594 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi4 捕获到错误: None
+2025-07-21 22:39:13.609 |  | INFO     | module_admin.service.task_service:_send_callback_notification:308 - 回调通知已发送: 200
+2025-07-21 22:39:13.610 |  | INFO     | module_admin.service.task_service:_monitor_processes:102 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 22:41:52.924 | 1bd8d322224e420a8dbc07d8b838d791 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 22:41:52.926 | 1bd8d322224e420a8dbc07d8b838d791 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 22:41:52.927 | 1bd8d322224e420a8dbc07d8b838d791 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:41:52.931 | 1bd8d322224e420a8dbc07d8b838d791 | INFO     | module_admin.service.task_service:start_process:163 - 已在进程 2207846 中启动任务 psi3
+2025-07-21 22:41:52.932 | 1bd8d322224e420a8dbc07d8b838d791 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:41:52.935 | 1bd8d322224e420a8dbc07d8b838d791 | INFO     | module_admin.service.task_service:start_process:163 - 已在进程 2207847 中启动任务 psi4
+2025-07-21 22:41:58.123 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi4 的错误到队列
+2025-07-21 22:41:58.787 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 22:42:57.237 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi3 捕获到错误: None
+2025-07-21 22:42:57.286 |  | INFO     | module_admin.service.task_service:_send_callback_notification:308 - 回调通知已发送: 200
+2025-07-21 22:42:57.287 |  | INFO     | module_admin.service.task_service:_monitor_processes:102 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 22:43:00.319 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi4 捕获到错误: None
+2025-07-21 22:43:00.340 |  | INFO     | module_admin.service.task_service:_send_callback_notification:308 - 回调通知已发送: 200
+2025-07-21 22:43:00.342 |  | INFO     | module_admin.service.task_service:_monitor_processes:102 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 22:43:04.001 | 3a0d1074dd974639b6a38d037f80cdfa | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 22:43:04.003 | 3a0d1074dd974639b6a38d037f80cdfa | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 22:43:04.004 | 3a0d1074dd974639b6a38d037f80cdfa | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:43:04.007 | 3a0d1074dd974639b6a38d037f80cdfa | INFO     | module_admin.service.task_service:start_process:163 - 已在进程 2216082 中启动任务 psi3
+2025-07-21 22:43:04.008 | 3a0d1074dd974639b6a38d037f80cdfa | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:43:04.013 | 3a0d1074dd974639b6a38d037f80cdfa | INFO     | module_admin.service.task_service:start_process:163 - 已在进程 2216083 中启动任务 psi4
+2025-07-21 22:43:34.457 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 22:43:40.385 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi3 捕获到错误: None
+2025-07-21 22:43:40.403 |  | INFO     | module_admin.service.task_service:_send_callback_notification:308 - 回调通知已发送: 200
+2025-07-21 22:43:40.404 |  | INFO     | module_admin.service.task_service:_monitor_processes:102 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 22:44:04.031 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi4 的错误到队列
+2025-07-21 22:44:05.432 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi4 捕获到错误: None
+2025-07-21 22:44:05.450 |  | INFO     | module_admin.service.task_service:_send_callback_notification:308 - 回调通知已发送: 200
+2025-07-21 22:44:05.451 |  | INFO     | module_admin.service.task_service:_monitor_processes:102 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 22:48:39.234 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 22:48:39.234 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 22:48:39.235 |  | INFO     | module_admin.service.task_service:_start_monitor:63 - 进程监控线程已启动
+2025-07-21 22:48:42.722 | 82d07c1025274e3b8c275e51d21d281c | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 22:48:42.723 | 82d07c1025274e3b8c275e51d21d281c | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 22:48:42.724 | 82d07c1025274e3b8c275e51d21d281c | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:48:42.727 | 82d07c1025274e3b8c275e51d21d281c | INFO     | module_admin.service.task_service:start_process:165 - 已在进程 2251282 中启动任务 psi3
+2025-07-21 22:48:42.727 | 82d07c1025274e3b8c275e51d21d281c | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:48:42.730 | 82d07c1025274e3b8c275e51d21d281c | INFO     | module_admin.service.task_service:start_process:165 - 已在进程 2251283 中启动任务 psi4
+2025-07-21 22:48:44.242 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 任务 psi3 捕获到错误: None
+2025-07-21 22:48:44.251 |  | INFO     | module_admin.service.task_service:_send_callback_notification:310 - 回调通知已发送: 200
+2025-07-21 22:48:44.252 |  | INFO     | module_admin.service.task_service:_monitor_processes:104 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 22:48:44.253 |  | ERROR    | module_admin.service.task_service:_monitor_processes:93 - 任务 psi4 捕获到错误: None
+2025-07-21 22:48:44.260 |  | INFO     | module_admin.service.task_service:_send_callback_notification:310 - 回调通知已发送: 200
+2025-07-21 22:48:44.261 |  | INFO     | module_admin.service.task_service:_monitor_processes:104 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 22:53:47.138 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 22:53:47.139 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 22:53:47.140 |  | INFO     | module_admin.service.task_service:_start_monitor:64 - 进程监控线程已启动
+2025-07-21 22:53:49.759 | d384a6356b85421483a6054edfc10aad | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 22:53:49.760 | d384a6356b85421483a6054edfc10aad | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 22:53:49.760 | d384a6356b85421483a6054edfc10aad | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:53:49.763 | d384a6356b85421483a6054edfc10aad | INFO     | module_admin.service.task_service:start_process:166 - 已在进程 2276502 中启动任务 psi3
+2025-07-21 22:53:49.763 | d384a6356b85421483a6054edfc10aad | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 22:53:49.765 | d384a6356b85421483a6054edfc10aad | INFO     | module_admin.service.task_service:start_process:166 - 已在进程 2276503 中启动任务 psi4
+2025-07-21 22:53:52.144 |  | ERROR    | module_admin.service.task_service:_monitor_processes:94 - 任务 psi3 捕获到错误: None
+2025-07-21 22:53:52.171 |  | INFO     | module_admin.service.task_service:_send_callback_notification:311 - 回调通知已发送: 200
+2025-07-21 22:53:52.172 |  | INFO     | module_admin.service.task_service:_monitor_processes:105 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 22:53:52.174 |  | ERROR    | module_admin.service.task_service:_monitor_processes:94 - 任务 psi4 捕获到错误: None
+2025-07-21 22:53:52.180 |  | INFO     | module_admin.service.task_service:_send_callback_notification:311 - 回调通知已发送: 200
+2025-07-21 22:53:52.181 |  | INFO     | module_admin.service.task_service:_monitor_processes:105 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 23:02:18.376 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 23:02:18.377 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 23:02:18.378 |  | INFO     | module_admin.service.task_service:_start_monitor:64 - 进程监控线程已启动
+2025-07-21 23:02:31.153 | 0cca5d1c2f7e42dea1f494a14f21a551 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 23:02:31.154 | 0cca5d1c2f7e42dea1f494a14f21a551 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 23:02:31.155 | 0cca5d1c2f7e42dea1f494a14f21a551 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 23:02:31.159 | 0cca5d1c2f7e42dea1f494a14f21a551 | INFO     | module_admin.service.task_service:start_process:167 - 已在进程 2306645 中启动任务 psi3
+2025-07-21 23:02:31.160 | 0cca5d1c2f7e42dea1f494a14f21a551 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 23:02:31.162 | 0cca5d1c2f7e42dea1f494a14f21a551 | INFO     | module_admin.service.task_service:start_process:167 - 已在进程 2306646 中启动任务 psi4
+2025-07-21 23:02:32.823 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 23:02:33.060 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi4 的错误到队列
+2025-07-21 23:02:33.393 |  | ERROR    | module_admin.service.task_service:_monitor_processes:95 - 任务 psi3 捕获到错误: None
+2025-07-21 23:02:33.402 |  | INFO     | module_admin.service.task_service:_send_callback_notification:312 - 回调通知已发送: 200
+2025-07-21 23:02:33.403 |  | INFO     | module_admin.service.task_service:_monitor_processes:106 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 23:02:38.409 |  | ERROR    | module_admin.service.task_service:_monitor_processes:95 - 任务 psi4 捕获到错误: None
+2025-07-21 23:02:38.418 |  | INFO     | module_admin.service.task_service:_send_callback_notification:312 - 回调通知已发送: 200
+2025-07-21 23:02:38.419 |  | INFO     | module_admin.service.task_service:_monitor_processes:106 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 23:04:32.218 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 23:04:32.219 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 23:04:32.220 |  | INFO     | module_admin.service.task_service:_start_monitor:60 - 进程监控线程已启动
+2025-07-21 23:04:59.805 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 23:04:59.805 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 23:04:59.806 |  | INFO     | module_admin.service.task_service:_start_monitor:60 - 进程监控线程已启动
+2025-07-21 23:05:08.348 | 1301386e16764f80b0415a2c0abf0636 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 23:05:08.350 | 1301386e16764f80b0415a2c0abf0636 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 23:05:08.350 | 1301386e16764f80b0415a2c0abf0636 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 23:05:08.352 | 1301386e16764f80b0415a2c0abf0636 | INFO     | module_admin.service.task_service:start_process:163 - 已在进程 2323721 中启动任务 psi3
+2025-07-21 23:05:08.353 | 1301386e16764f80b0415a2c0abf0636 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 23:05:08.354 | 1301386e16764f80b0415a2c0abf0636 | INFO     | module_admin.service.task_service:start_process:163 - 已在进程 2323724 中启动任务 psi4
+2025-07-21 23:05:10.171 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi4 的错误到队列
+2025-07-21 23:05:10.669 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 23:05:14.821 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi3 捕获到错误: None
+2025-07-21 23:05:14.830 |  | INFO     | module_admin.service.task_service:_send_callback_notification:308 - 回调通知已发送: 200
+2025-07-21 23:05:14.831 |  | INFO     | module_admin.service.task_service:_monitor_processes:102 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 23:05:14.832 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi4 捕获到错误: None
+2025-07-21 23:05:14.837 |  | INFO     | module_admin.service.task_service:_send_callback_notification:308 - 回调通知已发送: 200
+2025-07-21 23:05:14.838 |  | INFO     | module_admin.service.task_service:_monitor_processes:102 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 23:07:42.341 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 23:07:42.341 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 23:07:42.342 |  | INFO     | module_admin.service.task_service:_start_monitor:60 - 进程监控线程已启动
+2025-07-21 23:07:45.170 | 8dc36e77127846b59dea9b320545eff1 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 23:07:45.171 | 8dc36e77127846b59dea9b320545eff1 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 23:07:45.172 | 8dc36e77127846b59dea9b320545eff1 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 23:07:45.175 | 8dc36e77127846b59dea9b320545eff1 | INFO     | module_admin.service.task_service:start_process:163 - 已在进程 2340299 中启动任务 psi3
+2025-07-21 23:07:45.175 | 8dc36e77127846b59dea9b320545eff1 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 23:07:45.177 | 8dc36e77127846b59dea9b320545eff1 | INFO     | module_admin.service.task_service:start_process:163 - 已在进程 2340300 中启动任务 psi4
+2025-07-21 23:07:46.964 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi4 的错误到队列
+2025-07-21 23:07:47.347 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi4 捕获到错误: None
+2025-07-21 23:07:47.355 |  | INFO     | module_admin.service.task_service:_send_callback_notification:308 - 回调通知已发送: 200
+2025-07-21 23:07:47.356 |  | INFO     | module_admin.service.task_service:_monitor_processes:102 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 23:07:47.449 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 23:07:52.362 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi3 捕获到错误: None
+2025-07-21 23:07:52.371 |  | INFO     | module_admin.service.task_service:_send_callback_notification:308 - 回调通知已发送: 200
+2025-07-21 23:07:52.372 |  | INFO     | module_admin.service.task_service:_monitor_processes:102 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 23:09:46.948 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 23:09:46.949 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 23:09:46.950 |  | INFO     | module_admin.service.task_service:_start_monitor:60 - 进程监控线程已启动
+2025-07-21 23:09:49.112 | 5382466e2b6f47bfb56f18e79aad874c | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 23:09:49.114 | 5382466e2b6f47bfb56f18e79aad874c | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 23:09:49.114 | 5382466e2b6f47bfb56f18e79aad874c | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 23:09:49.117 | 5382466e2b6f47bfb56f18e79aad874c | INFO     | module_admin.service.task_service:start_process:163 - 已在进程 2350362 中启动任务 psi3
+2025-07-21 23:09:49.118 | 5382466e2b6f47bfb56f18e79aad874c | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 23:09:49.120 | 5382466e2b6f47bfb56f18e79aad874c | INFO     | module_admin.service.task_service:start_process:163 - 已在进程 2350366 中启动任务 psi4
+2025-07-21 23:09:51.957 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi3 捕获到错误: None
+2025-07-21 23:09:51.967 |  | INFO     | module_admin.service.task_service:_send_callback_notification:308 - 回调通知已发送: 200
+2025-07-21 23:09:51.968 |  | INFO     | module_admin.service.task_service:_monitor_processes:102 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 23:09:51.970 |  | ERROR    | module_admin.service.task_service:_monitor_processes:91 - 任务 psi4 捕获到错误: None
+2025-07-21 23:09:51.977 |  | INFO     | module_admin.service.task_service:_send_callback_notification:308 - 回调通知已发送: 200
+2025-07-21 23:09:51.978 |  | INFO     | module_admin.service.task_service:_monitor_processes:102 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 23:29:22.590 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 23:29:22.591 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 23:29:22.593 |  | INFO     | module_admin.service.task_service:_start_monitor:63 - 进程监控线程已启动
+2025-07-21 23:29:31.254 | cf98cd361d764b8eaffe47110a726bf3 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 23:29:31.255 | cf98cd361d764b8eaffe47110a726bf3 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 23:29:31.256 | cf98cd361d764b8eaffe47110a726bf3 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 23:29:31.259 | cf98cd361d764b8eaffe47110a726bf3 | INFO     | module_admin.service.task_service:start_process:168 - 已在进程 2462300 中启动任务 psi3
+2025-07-21 23:29:31.260 | cf98cd361d764b8eaffe47110a726bf3 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 23:29:31.261 | cf98cd361d764b8eaffe47110a726bf3 | INFO     | module_admin.service.task_service:start_process:168 - 已在进程 2462301 中启动任务 psi4
+2025-07-21 23:29:45.445 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 23:30:13.296 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi4 的错误到队列
+2025-07-21 23:39:22.500 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 23:39:22.501 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 23:39:22.501 |  | INFO     | module_admin.service.task_service:_start_monitor:63 - 进程监控线程已启动
+2025-07-21 23:39:28.005 | fb20130045a2401784a8da5b3cf71c0d | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 23:39:28.006 | fb20130045a2401784a8da5b3cf71c0d | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 23:39:28.007 | fb20130045a2401784a8da5b3cf71c0d | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 23:39:28.009 | fb20130045a2401784a8da5b3cf71c0d | INFO     | module_admin.service.task_service:start_process:168 - 已在进程 2523313 中启动任务 psi3
+2025-07-21 23:39:28.010 | fb20130045a2401784a8da5b3cf71c0d | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 23:39:28.012 | fb20130045a2401784a8da5b3cf71c0d | INFO     | module_admin.service.task_service:start_process:168 - 已在进程 2523314 中启动任务 psi4
+2025-07-21 23:39:29.687 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 23:39:29.754 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi4 的错误到队列
+2025-07-21 23:39:32.512 |  | INFO     | module_admin.service.task_service:_monitor_processes:94 - 任务 psi3 错误: 
+None
+2025-07-21 23:39:32.525 |  | INFO     | module_admin.service.task_service:_send_callback_notification:313 - 回调通知已发送: 200
+2025-07-21 23:39:32.526 |  | INFO     | module_admin.service.task_service:_monitor_processes:107 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 23:39:32.527 |  | INFO     | module_admin.service.task_service:_monitor_processes:94 - 任务 psi4 错误: 
+None
+2025-07-21 23:39:32.534 |  | INFO     | module_admin.service.task_service:_send_callback_notification:313 - 回调通知已发送: 200
+2025-07-21 23:39:32.535 |  | INFO     | module_admin.service.task_service:_monitor_processes:107 - 任务 psi4 已结束，已从进程列表中移除
+2025-07-21 23:41:44.294 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 23:41:44.295 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 23:41:44.297 |  | INFO     | module_admin.service.task_service:_start_monitor:63 - 进程监控线程已启动
+2025-07-21 23:41:57.222 | 2ab624760a844c788d7c2820188d4c2c | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 23:41:57.224 | 2ab624760a844c788d7c2820188d4c2c | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 23:41:57.225 | 2ab624760a844c788d7c2820188d4c2c | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 23:41:57.229 | 2ab624760a844c788d7c2820188d4c2c | INFO     | module_admin.service.task_service:start_process:168 - 已在进程 2539327 中启动任务 psi3
+2025-07-21 23:41:57.232 | 2ab624760a844c788d7c2820188d4c2c | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 23:41:57.235 | 2ab624760a844c788d7c2820188d4c2c | INFO     | module_admin.service.task_service:start_process:168 - 已在进程 2539328 中启动任务 psi4
+2025-07-21 23:42:31.539 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi4 的错误到队列
+2025-07-21 23:42:58.022 |  | DEBUG    | module_task.decorator_task:wrapper:28 - 已记录任务 psi3 的错误到队列
+2025-07-21 23:58:22.647 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-07-21 23:58:22.648 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-07-21 23:58:22.649 |  | INFO     | module_admin.service.task_service:_start_monitor:63 - 进程监控线程已启动
+2025-07-21 23:58:25.560 | da5b353d50a2459dbf159ae00a62d1b0 | INFO     | middlewares.trace_middleware.span:request_after:42 - Request Payload: [
+    {
+        "job_uid": "psi3",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    },
+    {
+        "job_uid": "psi4",
+        "job_executor": "default",
+        "invoke_target": "module_task.scheduler_test.job",
+        "job_args": "",
+        "job_kwargs": ""
+    }
+]
+2025-07-21 23:58:25.561 | da5b353d50a2459dbf159ae00a62d1b0 | INFO     | module_admin.controller.task_controller:execute_task_list:42 - 获取成功
+2025-07-21 23:58:25.562 | da5b353d50a2459dbf159ae00a62d1b0 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 23:58:25.564 | da5b353d50a2459dbf159ae00a62d1b0 | INFO     | module_admin.service.task_service:start_process:169 - 已在进程 2632338 中启动任务 psi3
+2025-07-21 23:58:25.565 | da5b353d50a2459dbf159ae00a62d1b0 | INFO     | module_admin.controller.task_controller:execute_task_list:47 - args: [], kwargs: {}
+2025-07-21 23:58:25.567 | da5b353d50a2459dbf159ae00a62d1b0 | INFO     | module_admin.service.task_service:start_process:169 - 已在进程 2632339 中启动任务 psi4
+2025-07-21 23:58:32.660 |  | INFO     | module_admin.service.task_service:_monitor_processes:94 - 任务 psi3 错误: 
+None
+2025-07-21 23:58:32.668 |  | INFO     | module_admin.service.task_service:_send_callback_notification:314 - 回调通知已发送: 200
+2025-07-21 23:58:32.670 |  | INFO     | module_admin.service.task_service:_monitor_processes:107 - 任务 psi3 已结束，已从进程列表中移除
+2025-07-21 23:58:32.671 |  | INFO     | module_admin.service.task_service:_monitor_processes:94 - 任务 psi4 错误: 
+None
+2025-07-21 23:58:32.678 |  | INFO     | module_admin.service.task_service:_send_callback_notification:314 - 回调通知已发送: 200
+2025-07-21 23:58:32.678 |  | INFO     | module_admin.service.task_service:_monitor_processes:107 - 任务 psi4 已结束，已从进程列表中移除

@@ -26,8 +26,8 @@ def ss_xgb_train(sf_cluster_desc, sf_node_eval_param, **kwargs):
     with SecretFlowConfigurator(**sf_cluster_desc) as sf_config:
         spu = sf_config.spu
         
-        alice = sf_config.alice
-        bob = sf_config.bob
+        alice = sf_config.parties_pyu.values()[0]
+        bob = sf_config.parties_pyu.values()[1]
         
         # 替换参数中的键
         ss_xgb_param = sf_config.replace_keys(sf_node_eval_param)
