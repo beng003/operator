@@ -16,7 +16,6 @@ def psi_csv(job_uid, sf_cluster_desc, sf_node_eval_param, **kwargs):
         sf_node_eval_param["output_path"] = modify_path(sf_node_eval_param["output_path"])
         
         psi_csv_param = sf_config.replace_keys(sf_node_eval_param)
-
         # import time
         # time.sleep(200)
         sf.wait(spu.psi_csv(**psi_csv_param))

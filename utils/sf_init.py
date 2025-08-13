@@ -88,7 +88,7 @@ class SecretFlowConfigurator:
         heu_config = self.sf_device.get("heu_config", {})
         if not heu_config:
             return None
-        return HEU(**heu_config)
+        return HEU(config=heu_config, spu_field_type=self.spu.conf.field)
     
     def _parties_pyu(self):
         """初始化pyu设备"""   

@@ -31,3 +31,6 @@ ZeroDivisionError: division by zero
 
 2025-08-06 18:16:47.345 |  | INFO     | module_admin.service.task_service:_send_callback_notification:335 - 回调通知已发送: 200
 2025-08-06 18:16:47.346 |  | INFO     | module_admin.service.task_service:_monitor_processes:127 - 任务 psi4 已结束，已从进程列表中移除
+2025-08-06 18:53:36.968 |  | INFO     | server:lifespan:19 - RuoYi-FastAPI开始启动
+2025-08-06 18:53:36.968 |  | INFO     | server:lifespan:23 - RuoYi-FastAPI启动成功
+2025-08-06 18:53:36.969 |  | INFO     | module_admin.service.task_service:_start_monitor:83 - 进程监控线程已启动

@@ -1,2 +1,5 @@
 .venv
 __pycache__
+psi-output.csv.psi_output_*
+sgb-model
+*.log
