@@ -1,4 +1,3 @@
-from secretflow.device.driver import wait
 from secretflow.ml.boost.sgb_v import (
     Sgb,
     get_classic_XGB_params,
@@ -11,8 +10,10 @@ from secretflow.data.vertical import read_csv as v_read_csv
 
 __all__ = ["sgb_v_train", "sgb_v_predict"]
 
-# @capture_errors_to_queue
-def sgb_v_train(job_uid, sf_cluster_desc, sf_node_eval_param, **kwargs):
+def sgb_v_train(sf_cluster_desc, sf_node_eval_param, **kwargs):
+    # 导入wait函数到函数内部，避免在进程池初始化时被序列化
+    from secretflow.device.driver import wait
+    
     with SecretFlowConfigurator(**sf_cluster_desc) as sf_config:
         spu = sf_config.spu
         heu = sf_config.heu
@@ -56,7 +57,10 @@ def sgb_v_train(job_uid, sf_cluster_desc, sf_node_eval_param, **kwargs):
         r = model.save_model(saving_path_dict)
         wait(r)
 
-def sgb_v_predict(job_uid, sf_cluster_desc, sf_node_eval_param, **kwargs):
+def sgb_v_predict(sf_cluster_desc, sf_node_eval_param, **kwargs):
+    # 导入wait函数到函数内部，避免在进程池初始化时被序列化
+    from secretflow.device.driver import wait
+    
     with SecretFlowConfigurator(**sf_cluster_desc) as sf_config:
         # spu = sf_config.spu
 

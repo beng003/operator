@@ -34,6 +34,20 @@ def json_to_yaml(json_file_path, yaml_file_path):
     except Exception as e:
         print(f"Error: {e}")
 
+
+def convert_yaml_to_json_str(input_file, output_file):
+    # 直接加载YAML文件并解析
+    with open(input_file, 'r') as yaml_file:
+        data = yaml.safe_load(yaml_file)
+    
+    # 转换为紧凑的单行JSON字符串，保持所有转义字符
+    json_str = json.dumps(json.dumps(data))
+    
+    # 写入文件（保持原始转义格式）
+    with open(output_file, 'w', encoding='utf-8') as json_file:
+        json_file.write(f'{json_str}')
+
+
 def read_yaml(target):
     # if isinstance(target, str) or isinstance(target, bytes):
     #     return yaml.load(target, Loader=yaml.FullLoader)

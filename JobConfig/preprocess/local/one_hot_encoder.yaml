@@ -1,0 +1,45 @@
+sf_cluster_desc:
+  devices:
+    spu_config:
+      cluster_def:
+        nodes:
+          - address: 127.0.0.1:11666
+            listen_address: 0.0.0.0:11666
+            party: alice
+          - address: 127.0.0.1:11667
+            listen_address: 0.0.0.0:11667
+            party: bob
+        runtime_config:
+          field: 3
+          protocol: 2
+      link_desc:
+        brpc_channel_connection_type: pooled
+        brpc_channel_protocol: http
+        connect_retry_interval_ms: 1000
+        connect_retry_times: 60
+        http_timeout_ms: 1200000
+        recv_timeout_ms: 1200000
+    # heu_config:
+    #   evaluators:
+    #     - party: alice
+    #   he_parameters:
+    #     key_pair:
+    #       generate:
+    #         bit_size: 2048
+    #     schema: ou
+    #   mode: PHEU
+    #   sk_keeper:
+    #     party: bob
+  sf_init:
+    address: local
+    parties:
+      - alice
+      - bob
+sf_node_eval_param:
+  input_path:
+    alice: woe_binning_out.csv
+    bob: woe_binning_out.csv
+  column_list: ["job", "marital", "contact", "month", "day", "poutcome"]
+  one_hot_encoder_out:
+    alice: one_hot_encoder_out.csv
+    bob: one_hot_encoder_out.csv

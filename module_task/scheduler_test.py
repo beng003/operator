@@ -1,7 +1,5 @@
 from datetime import datetime
-from module_task.decorator_task import capture_errors_to_queue
 
-@capture_errors_to_queue
 def job(*args, **kwargs):
     """
     定时任务执行同步函数示例

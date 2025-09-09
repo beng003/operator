@@ -1,0 +1,39 @@
+sf_cluster_desc:
+  devices:
+    spu_config:
+      cluster_def:
+        nodes:
+        - address: 127.0.0.1:11666
+          listen_address: 0.0.0.0:11666
+          party: alice
+        - address: 127.0.0.1:11667
+          listen_address: 0.0.0.0:11667
+          party: bob
+        runtime_config:
+          field: 3
+          protocol: 2
+      link_desc:
+        brpc_channel_connection_type: pooled
+        brpc_channel_protocol: http
+        connect_retry_interval_ms: 1000
+        connect_retry_times: 60
+        http_timeout_ms: 1200000
+        recv_timeout_ms: 1200000
+  sf_init:
+    address: local
+    parties:
+    - alice
+    - bob
+sf_node_eval_param:
+  input_path:
+    alice: alice_bank_flow.csv
+    bob: bob_bank_flow.csv
+  key:
+    alice:
+    - uid1
+    bob:
+    - uid2
+  output_path:
+    alice: psi-output.csv
+    bob: psi-output.csv
+  receiver: alice

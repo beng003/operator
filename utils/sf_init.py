@@ -45,6 +45,8 @@ from secretflow.device import SPU, HEU
 from secretflow.security.aggregation import SecureAggregator
 from secretflow.security.compare import PlainComparator
 from utils.log_util import logger
+from secretflow.device.driver import wait
+import time
 
 class SecretFlowConfigurator:
     def __init__(self, devices: dict, sf_init: dict):
@@ -65,7 +67,8 @@ class SecretFlowConfigurator:
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         """退出上下文时，关闭设备以释放资源"""
-        sf.shutdown()
+        wait(sf.shutdown())
+        time.sleep(1)
 
     def _init_sf(self) -> SPU:
         """初始化SPU设备"""

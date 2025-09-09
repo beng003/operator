@@ -3,6 +3,10 @@
 logs/
 .coverage
 coverage.xml
+psi-output.csv.psi_output_*
+sgb-model
+*.log
+
 
 # 开发环境配置
 .envrc

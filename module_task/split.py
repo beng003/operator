@@ -5,7 +5,7 @@ from secretflow.data.vertical import read_csv as v_read_csv
 
 from secretflow.data.horizontal import read_csv as h_read_csv
 from secretflow.security.aggregation import SecureAggregator
-from secretflow.security import SecureAggregator
+# from secretflow.security import SecureAggregator
 from secretflow.security.compare import SPUComparator
 
 from secretflow.data.split import train_test_split

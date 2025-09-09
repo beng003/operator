@@ -2,13 +2,11 @@ import secretflow as sf
 from secretflow.ml.boost.ss_xgb_v import Xgb
 from utils.sf_init import SecretFlowConfigurator
 from utils.path_util import modify_path
-from module_task.decorator_task import capture_errors_to_queue
 from secretflow.data.vertical import read_csv as v_read_csv
 
 __all__ = ["ss_xgb"]
 
-@capture_errors_to_queue
-def ss_xgb(job_uid, sf_cluster_desc, sf_node_eval_param, **kwargs):
+def ss_xgb(sf_cluster_desc, sf_node_eval_param, **kwargs):
     
     with SecretFlowConfigurator(**sf_cluster_desc) as sf_config:
         spu = sf_config.spu

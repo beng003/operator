@@ -4,12 +4,11 @@ from config.env import AppConfig
 # from config.get_db import init_create_table
 # from config.get_redis import RedisUtil
 # from config.get_scheduler import SchedulerUtil  # todo: 定时任务
-from utils.common_util import worship
+# from utils.common_util import worship
 from utils.log_util import logger
 from module_admin.controller.task_controller import taskController
 from middlewares.trace_middleware import add_trace_middleware
 from module_admin.service.task_service import ProcessManager
-from fastapi import Request
 
 # 生命周期事件
 # note: contextlib生命周期管理（启动前准备 → 运行 → 关闭清理）
@@ -17,17 +16,30 @@ from fastapi import Request
 async def lifespan(app: FastAPI):
     # 启动阶段
     logger.info(f'{AppConfig.app_name}开始启动')
-    worship()  # 打印启动艺术字
-    # await init_create_table()  # 初始化数据库表结构
-    # app.state.redis = await RedisUtil.create_redis_pool()  # 创建Redis连接池
-    logger.info(f'{AppConfig.app_name}启动成功')
-    ProcessManager.get_instance().initialize()
     
-    # 运行阶段
-    yield
-    
-    # 关闭阶段
-    # await RedisUtil.close_redis_pool(app)  # 关闭Redis连接池
+    try:
+        # 初始化进程管理器
+        ProcessManager.get_instance()
+        
+        # 记录启动成功日志
+        logger.info(f'{AppConfig.app_name}启动成功')
+        
+        # 运行阶段
+        yield
+        
+    except Exception as e:
+        logger.error(f'{AppConfig.app_name}启动或运行过程中发生错误: {str(e)}')
+        # 确保在异常情况下也能执行清理操作
+        raise
+    finally:
+        # 关闭阶段
+        try:
+            # 获取进程管理器实例并关闭
+            process_manager = ProcessManager.get_instance()
+            process_manager.close()
+            logger.info(f'{AppConfig.app_name}已成功关闭所有资源')
+        except Exception as e:
+            logger.error(f'{AppConfig.app_name}关闭资源时发生错误: {str(e)}')
 
 # FastAPI核心对象初始化
 app = FastAPI(

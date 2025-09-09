@@ -1,65 +1,48 @@
 import os
 import signal
 import multiprocessing
-from typing import Dict, Any, List, Optional
-
-# import json
-import requests
 import threading
 import time
+import datetime
+from typing import Callable, Any, Dict, List, Optional
+import traceback
+import requests
 from utils.log_util import logger
-from config.env import DAGSchedulerConfig
-import queue
-
-
-DAGHttp = f"http://{DAGSchedulerConfig.dag_scheduler_host}:{DAGSchedulerConfig.dag_scheduler_port}"
-multiprocessing.set_start_method("spawn", force=True)
+from config.env import DAGSchedulerConfig, AppConfig
 
 class ProcessManager:
     """
     进程管理类，用于统一管理所有的进程操作
     """
-
+    
     _instance = None
-    _running_processes = {}
-    _monitor_thread = None
-    _monitor_running = False
-    _lock = threading.RLock()  # 添加线程锁以保证线程安全
+    _lock = threading.RLock()  # 类级别的锁，用于单例模式
 
-    complated_url = f"{DAGHttp}/scheduler/job_completed"
+    DAGHttp = f"http://{DAGSchedulerConfig.dag_scheduler_host}:{DAGSchedulerConfig.dag_scheduler_port}"
     stop_url = f"{DAGHttp}/scheduler/task/stop"
 
     def __new__(cls):
         """单例模式实现"""
-        if cls._instance is None:
-            cls._instance = super(ProcessManager, cls).__new__(cls)
-            # 不在这里启动监控线程，而是在显式调用时启动
-            
-            cls._instance._error_queue = multiprocessing.Queue()
-            cls._instance._job_errors = {}  # 普通字典，主进程使用
+        with cls._lock:
+            if cls._instance is None:
+                cls._instance = super(ProcessManager, cls).__new__(cls)
+                cls._instance._initialize_instance()
+                # 移除这里的Manager创建，移到initialize方法中
+                # cls._instance._manager = multiprocessing.Manager()
         return cls._instance
 
-    def __del__(self):
-        """析构函数"""
-        self._monitor_running = False
-        if self._monitor_thread and self._monitor_thread.is_alive():
-            self._monitor_thread.join(timeout=1)
-        
+    def _initialize_instance(self):
+        """初始化实例变量"""
+        self._running_processes = {}
+        self._instance_lock = threading.RLock()
+
+    def close(self):
+        # 先停止所有进程
         self.stop_all_processes()
         
-        if hasattr(self, '_error_queue'):
-            try:
-                self._error_queue.close()
-            except Exception as e:
-                logger.warning(f"关闭错误队列失败: {str(e)}")
-                
-        # 关闭Manager进程
-        if hasattr(self, '_manager'):
-            try:
-                self._manager.shutdown()
-                logger.info("共享资源管理器已关闭")
-            except Exception as e:
-                logger.error(f"Manager关闭失败: {str(e)}")
+    def __del__(self):
+        """析构函数"""
+        self.close()
 
     @classmethod
     def get_instance(cls):
@@ -68,72 +51,7 @@ class ProcessManager:
             cls._instance = cls()
         return cls._instance
 
-    def initialize(self):
-        """显式初始化方法，只在服务器进程中调用"""
-        self._start_monitor()
 
-    def _start_monitor(self):
-        """启动进程监控线程"""
-        if self._monitor_thread is None or not self._monitor_thread.is_alive():
-            self._monitor_running = True
-            self._monitor_thread = threading.Thread(
-                target=self._monitor_processes, daemon=True
-            )
-            self._monitor_thread.start()
-            logger.info("进程监控线程已启动")
-
-    def _monitor_processes(self):
-        """监控进程状态，清理已结束的进程"""
-        while self._monitor_running:
-            try:
-                # 复制键列表以避免在迭代过程中修改字典
-                with self._lock:
-                    job_uids = list(self._running_processes.keys())
-
-                for job_uid in job_uids:
-                    try:
-                        with self._lock:
-                            if job_uid not in self._running_processes:
-                                continue
-
-                            process_info = self._running_processes[job_uid]
-                            process = process_info["process"]
-
-                            # 检查进程是否已结束
-                            if not process.is_alive():
-                                self._process_error_queue()
-
-                                # 获取进程退出码（如果可用）
-                                exit_code = process.exitcode
-                                success = True if exit_code == 0 else False
-
-
-                                error_detail = self._job_errors.pop(job_uid, None)
-                                
-                                if error_detail:
-                                    logger.error(
-                                        f"任务 {job_uid} 错误: \n{error_detail}"
-                                    )
-
-                                # 从运行中进程列表中移除
-                                del self._running_processes[job_uid]
-
-                                # 发送回调通知
-                                # hack: 继续修改
-                                self._send_callback_notification(
-                                    self.complated_url, job_uid, success, error_detail
-                                )
-
-                                logger.info(
-                                    f"任务 {job_uid} 已结束，已从进程列表中移除"
-                                )
-                    except Exception as e:
-                        logger.error(f"监控任务 {job_uid} 时发生错误: {str(e)}")
-
-                # 每隔一段时间检查一次
-                time.sleep(5)
-            except Exception as e:
-                logger.error(f"进程监控线程发生错误: {str(e)}")
 
     def start_process(
         self,
@@ -156,9 +74,10 @@ class ProcessManager:
         Returns:
             进程信息字典
         """
-        if job_uid in self._running_processes:
-            logger.warning(f"任务 {job_uid} 已在运行中")
-            return self._running_processes[job_uid]
+        with self._instance_lock:
+            if job_uid in self._running_processes:
+                logger.warning(f"任务 {job_uid} 已在运行中")
+                return self._running_processes[job_uid]
 
         if args is None:
             args = []
@@ -166,10 +85,9 @@ class ProcessManager:
             kwargs = {}
 
         kwargs["job_uid"] = job_uid
-        kwargs["error_queue"] = self._error_queue
 
         # 创建并启动进程
-        process = multiprocessing.Process(target=function, args=args, kwargs=kwargs)
+        process = multiprocessing.Process(target=worker_wrapper, args=(function, *args), kwargs=kwargs)
         process.start()
 
         # 记录进程信息
@@ -177,72 +95,64 @@ class ProcessManager:
             "process": process,
             "pid": process.pid,
             "job": job_info,
-            "start_time": multiprocessing.current_process()._config.get(
-                "start_time", None
-            ),
+            "start_time": datetime.datetime.now().timestamp()  # 使用当前时间戳作为启动时间
         }
 
         # 存储进程信息
-        with self._lock:
+        with self._instance_lock:
             self._running_processes[job_uid] = process_info
 
         logger.info(f"已在进程 {process.pid} 中启动任务 {job_uid}")
         return process_info
 
-    def _process_error_queue(self):
-        # hack: 终端未出现日志
-        """处理错误队列中的所有错误"""
-        while not self._error_queue.empty():
-            try:
-                job_uid, error_detail = self._error_queue.get_nowait()
-                # 存储错误详情
-                self._job_errors[job_uid] = error_detail
-                # logger.error(f"任务 {job_uid} 捕获到错误: {error_detail}")
-            except queue.Empty:
-                break
-
     def stop_process(self, job_uid: str, timeout: int = 5) -> bool:
         """
-        停止指定的进程
-
-        Args:
-            job_uid: 任务唯一标识
-            timeout: 等待进程结束的超时时间（秒）
-
-        Returns:
-            是否成功停止进程
+        改进的进程停止方法
         """
-        with self._lock:
-            if job_uid not in self._running_processes:
-                logger.warning(f"任务 {job_uid} 不在运行中")
-                return True
-
-            process_info = self._running_processes[job_uid]
-            process = process_info["process"]
-
+        process = None
         try:
-            # 尝试终止进程
-            process.terminate()
-            process.join(timeout=timeout)
+            with self._instance_lock:
+                if job_uid not in self._running_processes:
+                    logger.warning(f"任务 {job_uid} 不在运行中")
+                    return True
 
-            # hack: 强制结束进程
-            # # 如果进程仍然运行，强制结束
+                process_info = self._running_processes[job_uid]
+                process = process_info["process"]
+                
+                # 立即从字典中移除，避免竞争条件
+                del self._running_processes[job_uid]
+
+            # 尝试优雅终止
             if process.is_alive():
-                os.kill(process.pid, signal.SIGKILL)
-                process.join(timeout=1)
+                process.terminate()
+                process.join(timeout=timeout)
 
-            with self._lock:
-                # 从运行中进程列表中移除
-                if job_uid in self._running_processes:
-                    del self._running_processes[job_uid]
+                # 如果仍然运行，强制终止
+                if process.is_alive():
+                    try:
+                        os.kill(process.pid, signal.SIGKILL)
+                        process.join(timeout=1)
+                    except ProcessLookupError:
+                        pass  # 进程可能已经结束
 
-            # # 发送任务完成通知（如果有回调URL）
-            # self._send_callback_notification(self.stop_url, job_uid, success)
-
+            # 确保进程资源被清理
+            if hasattr(process, 'close'):
+                process.close()
+                
+            # 发送任务停止通知
+            send_callback_notification(self.stop_url, job_uid, False, "任务被手动停止")
+            
             logger.info(f"任务 {job_uid} 已停止")
             return True
+            
         except Exception as e:
             logger.error(f"停止任务 {job_uid} 失败: {str(e)}")
+            # 确保即使出错也清理资源
+            if process and hasattr(process, 'close'):
+                try:
+                    process.close()
+                except:
+                    pass
             return False
 
     def stop_all_processes(self, timeout: int = 5) -> Dict[str, bool]:
@@ -256,7 +166,8 @@ class ProcessManager:
             任务ID与停止结果的映射
         """
         results = {}
-        job_uids = list(self._running_processes.keys())
+        with self._instance_lock:
+            job_uids = list(self._running_processes.keys())
 
         for job_uid in job_uids:
             results[job_uid] = self.stop_process(job_uid, timeout)
@@ -273,7 +184,12 @@ class ProcessManager:
         Returns:
             进程信息字典，如果不存在则返回None
         """
-        return self._running_processes.get(job_uid)
+        with self._instance_lock:
+            process_info = self._running_processes.get(job_uid)
+            if process_info:
+                # 返回副本以避免外部修改
+                return process_info.copy()
+            return None
 
     def get_all_processes(self) -> Dict[str, Dict]:
         """
@@ -282,8 +198,9 @@ class ProcessManager:
         Returns:
             所有进程信息的字典
         """
-        # 返回一个新的字典，避免外部修改内部状态
-        return self._running_processes.copy()
+        with self._instance_lock:
+            # 返回所有进程信息的深拷贝
+            return {uid: info.copy() for uid, info in self._running_processes.items()}
 
     def is_process_running(self, job_uid: str) -> bool:
         """
@@ -295,7 +212,7 @@ class ProcessManager:
         Returns:
             进程是否正在运行
         """
-        with self._lock:
+        with self._instance_lock:
             if job_uid not in self._running_processes:
                 return False
 
@@ -304,43 +221,112 @@ class ProcessManager:
 
         return process.is_alive()
 
-    def _send_callback_notification(
-        self,
-        callback_url: str,
-        job_uid: str,
-        success: bool,
-        error_detail: str = None,
-    ) -> bool:
-        """
-        发送回调通知
+def worker_wrapper(func: Callable, *args, **kwargs) -> Dict[str, Any]:
+    """
+    工作进程包装函数，用于捕获异常和记录执行时间
+    
+    Args:
+        func: 要执行的函数
+        args: 函数位置参数
+        kwargs: 函数关键字参数
+    
+    Returns:
+        包含执行结果的字典
+    """
+    job_uid = kwargs.pop("job_uid", None)
+    process_id = multiprocessing.current_process().pid
+    start_time = time.time()
+    result = None
+    error = None
+    success = False
 
-        Args:
-            job_uid: 任务唯一标识
-            process_info: 进程信息
-            status: 任务状态
-            message: 通知消息
+    try:
+        result = func(*args, **kwargs)
+        success = True
+    except Exception as e:
+        error = f"{str(e)}\n{traceback.format_exc()}"
+        logger.error(f"Process {process_id} failed: {error}")
+    finally:
+        process_time = time.time() - start_time
+        logger.info(
+            f"Process {process_id} completed in {process_time:.2f}s "
+            f"with status: {'SUCCESS' if success else 'FAILED'}"
+        )
 
-        Returns:
-            是否成功发送通知
-        """
-        try:
-            response = requests.post(
-                callback_url,
-                json={
-                    "job_uid": job_uid,
-                    "success": success,
-                    "error_detail": error_detail,
-                },
-            )
-            logger.info(f"回调通知已发送: {response.status_code}")
-            return True
-        except Exception as e:
-            logger.error(f"发送回调通知失败: {str(e)}")
+        # 获取complated_url
 
+        
+        send_callback_notification(job_uid, success, error)
+        send_delete_notification(job_uid)
+
+        return {
+            "success": success,
+            "result": result,
+            "error": error,
+            "process_time": process_time,
+            "process_id": process_id,
+        }
+
+
+def send_callback_notification(
+    job_uid: str,
+    success: bool,
+    error_detail: str = None,
+) -> bool:
+    """
+    发送回调通知
+
+    Args:
+        job_uid: 任务唯一标识
+        success: 是否成功
+        error_detail: 错误详情
+
+    Returns:
+        是否成功发送通知
+    """
+    DAGHttp = f"http://{DAGSchedulerConfig.dag_scheduler_host}:{DAGSchedulerConfig.dag_scheduler_port}"
+    callback_url = f"{DAGHttp}/scheduler/job_completed"
+    
+    try:
+        response = requests.post(
+            callback_url,
+            json={
+                "job_uid": job_uid,
+                "success": success,
+                "error_detail": error_detail,
+            },
+            timeout=10  # 添加超时设置
+        )
+        logger.info(f"回调通知已发送: {response.status_code}")
+        return True
+    except Exception as e:
+        logger.error(f"发送回调通知失败: {str(e)}")
         return False
 
-    def __del__(self):
-        """析构函数，确保监控线程停止"""
-        self._monitor_running = False
-        if self._monitor_thread and self._monitor_thread.is_alive():
-            self._monitor_thread.join(timeout=1)
+def send_delete_notification(
+    job_uid: str,
+) -> bool:
+    """
+    发送删除通知
+
+    Args:
+        callback_url: 回调URL
+        job_uid: 任务唯一标识
+
+    Returns:
+        是否成功发送通知
+    """
+    DAGHttp = f"http://127.0.0.1:{AppConfig.app_port}"
+    callback_url = f"{DAGHttp}/operator/delete_job"
+    
+    try:
+        response = requests.post(
+            callback_url,
+            params={"job_uid": job_uid},
+            timeout=10  # 添加超时设置
+        )
+        logger.info(f"回调通知已发送: {response.status_code}")
+        return True
+    except Exception as e:
+        logger.error(f"发送回调通知失败: {str(e)}")
+        return False
