@@ -37,8 +37,8 @@ sf_cluster_desc:
       - bob
 sf_node_eval_param:
   input_path:
-    alice: psi-output.csv
-    bob: psi-output.csv
+    alice: train_dataset.csv
+    bob: train_dataset.csv
   keys:
     alice:
       - id1

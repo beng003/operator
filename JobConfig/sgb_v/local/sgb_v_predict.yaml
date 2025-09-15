@@ -37,16 +37,16 @@ sf_cluster_desc:
       - bob
 sf_node_eval_param:
   input_path:
-    alice: psi-output.csv
-    bob: psi-output.csv
+    alice: test_dataset.csv
+    bob: test_dataset.csv
   output_path:
-    alice: sgb-output.csv
-    bob: sgb-output.csv
+    alice: sgbv_predict_output.csv
+    bob: sgbv_predict_output.csv
   keys:
     alice:
-      - id1
+      - uid1
     bob:
-      - id2
+      - uid2
   saving_path_dict:
     alice: sgb-model
     bob: sgb-model

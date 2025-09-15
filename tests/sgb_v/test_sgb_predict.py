@@ -13,7 +13,7 @@ project_root = os.path.dirname(os.path.dirname(current_dir))
 sys.path.insert(0, project_root)
 
 # 构建YAML文件的绝对路径
-yaml_file_path = os.path.join(project_root, 'JobConfig', 'sgb_v', 'sgb_v_predict.yaml')
+yaml_file_path = os.path.join(project_root, 'JobConfig', 'sgb_v', 'local','sgb_v_predict.yaml')
 
 # 读取YAML文件
 with open(yaml_file_path, 'r') as file:

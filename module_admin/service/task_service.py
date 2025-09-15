@@ -51,8 +51,6 @@ class ProcessManager:
             cls._instance = cls()
         return cls._instance
 
-
-
     def start_process(
         self,
         job_uid: str,

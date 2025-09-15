@@ -1,0 +1,2 @@
+docker push crpi-84gohwg2zpoyckdg.cn-hangzhou.personal.cr.aliyuncs.com/beng003_docker/operator:v0.4.0
+docker push crpi-84gohwg2zpoyckdg.cn-hangzhou.personal.cr.aliyuncs.com/beng003_docker/operator:latest
